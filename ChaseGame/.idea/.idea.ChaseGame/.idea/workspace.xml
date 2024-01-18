@@ -8,12 +8,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFabrica.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/SpeedBonus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Bonus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/BonusTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/BasicBonus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/EntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Bonus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/SpeedBonus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/BonusTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/SizeBonus.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -33,7 +33,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/FailWindow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/WinWindow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Level/SpeedBonus.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFabrica.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/BonusTimer.cs" />
@@ -43,6 +42,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2ajPjdahyicyWBBzLXezHIamCYd" />
@@ -83,6 +83,7 @@
       <workItem from="1705334673053" duration="1975000" />
       <workItem from="1705356459340" duration="2765000" />
       <workItem from="1705572384147" duration="1310000" />
+      <workItem from="1705612477284" duration="3059000" />
     </task>
     <servers />
   </component>

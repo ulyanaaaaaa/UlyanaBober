@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody _rigidbody;
+    private Animator _animator;
+    //private float _velocity;
     [SerializeField] private GameObject _player;
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpHeight;
@@ -19,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         _groundCheker.OnEnter += SetGround;
         _groundCheker.OnExit += RemoveGround;
+        _animator = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -69,6 +73,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 directionMove = transform.right * inputMove.x + transform.forward * inputMove.z;
 
         _rigidbody.velocity = new Vector3(directionMove.x, _rigidbody.velocity.y, directionMove.z);
+        
+        //_animator.SetFloat("Velocity" , directio);
     }
 
     private void Jump()
