@@ -6,9 +6,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private const float Gravity = 9.81f;
     private Rigidbody _rigidbody;
     private Animator _animator;
-    //private float _velocity;
+    private CharacterController _controller;
+    private Vector3 _direction;
+    private Vector3 _velocity;
     [SerializeField] private GameObject _player;
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpHeight;
@@ -19,10 +22,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        _controller = GetComponent<CharacterController>();
+        _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody>();
         _groundCheker.OnEnter += SetGround;
         _groundCheker.OnExit += RemoveGround;
-        _animator = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -60,25 +64,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
-        Vector3 inputMove = Vector3.zero;
+        if (_controller.isGrounded)
+        {
+            _direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            Debug.Log((_direction.z + _direction.x + _direction.z).ToString());
+            _animator.SetFloat("Velocity", _direction.z + _direction.x + _direction.z);
 
-        inputMove.x = Input.GetAxis("Horizontal");
-        inputMove.z = Input.GetAxis("Vertical");
-        
-        if (!_playerHealth.IsTookSpeedBonus)
-            inputMove *= _speed;
-        else
-            inputMove = inputMove * _speed * 2;
-
-        Vector3 directionMove = transform.right * inputMove.x + transform.forward * inputMove.z;
-
-        _rigidbody.velocity = new Vector3(directionMove.x, _rigidbody.velocity.y, directionMove.z);
-        
-        //_animator.SetFloat("Velocity" , directio);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Jump!");
+                Jump();
+            }
+        }
+        _controller.Move(_direction * Time.deltaTime * _speed);
     }
 
     private void Jump()
     {
-        _rigidbody.AddForce(Vector3.up * _jumpHeight, ForceMode.Impulse);
+        _velocity.y += Mathf.Sqrt(_jumpHeight * -2f * Gravity);
     }
 }

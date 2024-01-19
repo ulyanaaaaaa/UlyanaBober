@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour, IEntryPointSetupBonusTimer
 {
     public Action OnDie;
 
@@ -30,6 +30,11 @@ public class PlayerHealth : MonoBehaviour
         _basicBonus = GetComponent<BasicBonus>();
         _sizeBonus = GetComponent<SizeBonus>();
         _speedBonus = GetComponent<SpeedBonus>();
+    }
+    
+    public void Setup(BonusTimer bonusTimer)
+    {
+        _bonusTimer = bonusTimer;
     }
 
     public void TakeDamage(float damage)
