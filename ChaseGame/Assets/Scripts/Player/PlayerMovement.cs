@@ -1,5 +1,3 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent (typeof(Rigidbody))]
@@ -67,14 +65,13 @@ public class PlayerMovement : MonoBehaviour
         if (_controller.isGrounded)
         {
             _direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            Debug.Log((_direction.z + _direction.x + _direction.z).ToString());
             _animator.SetFloat("Velocity", _direction.z + _direction.x + _direction.z);
 
+            if (_playerHealth.IsTookSpeedBonus)
+                _direction *= 2;
+
             if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Debug.Log("Jump!");
                 Jump();
-            }
         }
         _controller.Move(_direction * Time.deltaTime * _speed);
     }

@@ -5,18 +5,20 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour, IEntryPointSetupBonusTimer
 {
     public Action OnDie;
-
+    
     [SerializeField] private float _maxHealth;
     [SerializeField] private BonusTimer _bonusTimer;
     [SerializeField] private BasicBonus _basicBonus;
     [SerializeField] private SizeBonus _sizeBonus;
     [SerializeField] private SpeedBonus _speedBonus;
+    [SerializeField] private Enemy _enemy;
     
     public  bool IsTookBasicBonus { get; private set; }
     public  bool IsTookSpeedBonus { get; private set; }
     public  bool IsTookSizeBonus { get; private set; }
 
     private float _health;
+    private Animator _animator;
     private Coroutine _basicBonusTick;
     private Coroutine _speedBonusTick;
     private Coroutine _sizeBonusTick;
@@ -26,10 +28,13 @@ public class PlayerHealth : MonoBehaviour, IEntryPointSetupBonusTimer
     private void Awake()
     {
         _health = _maxHealth;
+        _animator = GetComponent<Animator>();
         _bonusTimer = GetComponent<BonusTimer>();
         _basicBonus = GetComponent<BasicBonus>();
         _sizeBonus = GetComponent<SizeBonus>();
         _speedBonus = GetComponent<SpeedBonus>();
+        _enemy = GetComponent<Enemy>();
+        _enemy.OnHit += HitOff;
     }
     
     public void Setup(BonusTimer bonusTimer)
@@ -78,24 +83,44 @@ public class PlayerHealth : MonoBehaviour, IEntryPointSetupBonusTimer
         }
         
     }
+
+    public void HitOn()
+    {
+        Debug.Log("Hit");
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("Hit");
+            _animator.SetFloat("Hit", -1);
+        }
+    }
+
+    public void HitOff()
+    {
+        _animator.SetFloat("Hit", 1);
+    }
     
     private IEnumerator BasicBonusTick(float time)
     {
+        _enemy.OnHit -= HitOff;
+        _enemy.OnHit += HitOn;
+        
         while (_secondsDone < time)
         {
-            Debug.Log("ddd");
             _bonusTimer.TimerText.text = (time - _secondsDone).ToString();
             yield return new WaitForSeconds(1);
             _secondsDone++;
         }
+        
         IsTookBasicBonus = false;
+        
+        _enemy.OnHit += HitOff;
+        _enemy.OnHit -= HitOn;
     }
     
     private IEnumerator SpeedBonusTick(float time)
     {
         while (_secondsDone < time)
         {
-            Debug.Log("ddd");
             yield return new WaitForSeconds(1);
             _bonusTimer.TimerText.text = (time - _secondsDone).ToString();
             _secondsDone++;
@@ -108,7 +133,6 @@ public class PlayerHealth : MonoBehaviour, IEntryPointSetupBonusTimer
         
         while (_secondsDone < time)
         {
-            Debug.Log("ddd");
             _bonusTimer.TimerText.text = (time - _secondsDone).ToString();
             yield return new WaitForSeconds(1);
             _secondsDone++;
