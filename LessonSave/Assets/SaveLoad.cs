@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using Newtonsoft.Json;
@@ -6,32 +7,90 @@ public class SaveLoad : MonoBehaviour
 {
     private void Update()
     {
-        //сохранение
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            string json = JsonConvert.SerializeObject(new Gold(Random.Range(1, 1000), "Ulyana"), Formatting.Indented);
-            File.WriteAllText(Application.persistentDataPath + "/SaveData.json", json);
+            Servises servises = new Servises();
+            
+            string jsonPlayer = JsonConvert.SerializeObject(servises.GetService<PlayerService>(), Formatting.Indented);
+            string jsonWallet = JsonConvert.SerializeObject(servises.GetService<WalletService>(), Formatting.Indented);
+            
+            File.WriteAllText(Application.persistentDataPath + "/SaveData.json", jsonPlayer);
+            File.WriteAllText(Application.persistentDataPath + "/SaveData.json", jsonWallet);
+            
             Debug.Log(Application.persistentDataPath + "/SaveData.json");
         }
-        //считывание
-        if (Input.GetKeyDown(KeyCode.S))
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
             string json = File.ReadAllText(Application.persistentDataPath + "/SaveData.json");
-            Gold gold = JsonConvert.DeserializeObject<Gold>(json);
-            Debug.Log(gold.Count + gold.WalletName);
+            
+            Service service = JsonConvert.DeserializeObject<EnemyService>(json);
+            Debug.Log(service.Name);
+            
+            Service serviceWallet = JsonConvert.DeserializeObject<WalletService>(json);
+            Debug.Log(serviceWallet.Name);
         }
     }
 }
 
-public class Gold
+public class Servises
 {
-    public int Count;
-    public string WalletName;
+    public List<Service> _services = new List<Service>();
 
-   public Gold(int count, string walletName)
+    public Servises()
     {
-        Count = count;
-        WalletName = walletName;
+        _services.Add(new EnemyService());
+        _services.Add(new SaveService());
+        _services.Add(new PlayerService());
+        _services.Add(new WalletService());
     }
-    
+
+    public T GetService<T>() where T : Service
+    {
+        foreach (Service serviceList in _services)
+        {
+            if (serviceList is T)
+            {
+                return (T)serviceList;
+            }
+        }
+        return null;
+    }
+}
+
+public class Service
+{
+    public string Name { get; protected set; }
+}
+
+public class SaveService : Service
+{
+    public SaveService()
+    {
+        Name = "Save Service";
+    }
+}
+
+public class WalletService : Service
+{
+    public WalletService()
+    {
+        Name = "Wallet Service";
+    }
+}
+
+public class EnemyService : Service
+{
+    public EnemyService()
+    {
+        Name = "Enemy Service";
+    }
+}
+
+public class PlayerService : Service
+{
+    public PlayerService()
+    {
+        Name = "Player Service";
+    }
 }
