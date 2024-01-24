@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator _animator;
     private Rigidbody _rigidbody;
-    private Vector3 movedirection;
+    private Vector3 _moveDirection, _moveVector;
 
     private void Awake()
     {
@@ -25,25 +25,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        _moveVector.x = Input.GetAxis("Horizontal");
+        _moveVector.z = Input.GetAxis("Vertical");
         
-        movedirection = new Vector3(moveHorizontal , 0 ,moveVertical);
+        _moveDirection = new Vector3(_moveVector.x, 0, _moveVector.z);
+        _rigidbody.MovePosition(_rigidbody.position + _moveDirection * _speed * Time.deltaTime );
 
-        transform.Translate(movedirection * _speed * Time.deltaTime);
-        
-        _animator.SetBool("IsRun", (moveHorizontal + moveVertical > 0) || (moveHorizontal + moveVertical < 0));
+        _animator.SetBool("IsRun", (_moveVector.x +_moveVector.z > 0) || (_moveVector.x + _moveVector.z < 0));
     }
 
     private void Hit()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            _animator.SetBool("IsHit", true);
-        }
-        else
-        {
-            _animator.SetBool("IsHit", false);
+            GetComponent<Animator>().SetBool("IsHit", !GetComponent<Animator>().GetBool("IsHit"));
         }
     }
 
@@ -52,10 +47,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             _animator.SetBool("IsJump", true);
-        }
-        else
-        {
-            _animator.SetBool("IsJump", false);
         }
     }
     
