@@ -1,19 +1,30 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using System.IO;
+using Newtonsoft.Json;
 
 public class Wallet : MonoBehaviour
 {
     public Action<float> OnValueChanged;
     [SerializeField] private Diamond _diamond;
-    [SerializeField] public float Value;
-    [SerializeField] private Abilities _abilities; 
+    [SerializeField] public float Value; 
+    private Abilities _abilities;
+    private Save _save;
 
     private void Awake()
     {
+        _abilities = GetComponent<Abilities>();
+        _save = GetComponent<Save>();
+            
+        SaveData _saveData = new SaveData(Value, _abilities.ValuePerClick, _abilities.ValuePerSecond);
+        
         Load();
         _diamond.OnClick += Click;
         StartCoroutine(SecondTick());
+        
+        _save.SaveValue(_saveData);
+        _save.Load(_saveData);
     }
 
     private void Load()

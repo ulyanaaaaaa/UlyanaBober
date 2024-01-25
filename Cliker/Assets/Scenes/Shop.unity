@@ -557,6 +557,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1404704628}
     - target: {fileID: 8706804855319208256, guid: 79149bed33877784ab9c0f993f851f72, type: 3}
+      propertyPath: _saveGame
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8706804855319208256, guid: 79149bed33877784ab9c0f993f851f72, type: 3}
       propertyPath: _abilities
       value: 
       objectReference: {fileID: 1404704629}
@@ -713,6 +717,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c712109225aa1a3468283fffbf44d030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1404704634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404704620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4b11b0354aeab448bd9a0d1f50eabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: 0
+  ValuePerSecond: 0
+  ValuePerClick: 0
 --- !u!224 &1570852914 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3420856097627015615, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
