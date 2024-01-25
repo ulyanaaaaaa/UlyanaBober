@@ -219,7 +219,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -19, y: 32}
+  m_AnchoredPosition: {x: -19.000061, y: 32}
   m_SizeDelta: {x: 15.1, y: -24.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78998117
@@ -579,7 +579,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ValuePerSecond>k__BackingField: 0
-  <ValuePerClick>k__BackingField: 1
+  <ValuePerClick>k__BackingField: 10
+  _wallet: {fileID: 937208136}
 --- !u!114 &937208141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,6 +591,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1432df11ce8d5ed45b80706592906682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &937208145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937208135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f146a8a53140a0969ce71e206a7f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1147790269

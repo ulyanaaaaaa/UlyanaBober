@@ -5,39 +5,31 @@ using UnityEngine;
 
 public class Abilities : MonoBehaviour
 {
-    [field: SerializeField] public float ValuePerSecond { get; private set; } 
-    [field: SerializeField] public float ValuePerClick { get; private set; }
+    [field: SerializeField] public float ValuePerSecond { get; set; } 
+    [field: SerializeField] public float ValuePerClick { get; set; }
+
+    [SerializeField] private Wallet _wallet;
 
     private void Awake()
     {
-        Load();
-    }
-
-    private void Load()
-    {
-        if (PlayerPrefs.GetFloat("ValuePerClick") != 0)
-        {
-            ValuePerClick = PlayerPrefs.GetFloat("ValuePerClick");
-        }
-        if (PlayerPrefs.GetFloat("ValuePerSecond") != 0)
-        {
-            ValuePerSecond = PlayerPrefs.GetFloat("ValuePerSecond");
-        }
+        _wallet.OnLoad();
     }
 
     public void AddValuePerSecond(float amount)
     {
         if (amount < 0)
             throw new ArgumentException("Value must be positive!");
+        
         ValuePerSecond += amount;
-        PlayerPrefs.SetFloat("ValuePerSecond", ValuePerSecond);
+        _wallet.OnSave();
     }
 
     public void AddValuePerClick(float amount)
     {
         if (amount < 0)
             throw new ArgumentException("Value must be positive!");
+        
         ValuePerClick += amount;
-        PlayerPrefs.SetFloat("ValuePerClick", ValuePerClick);
+        _wallet.OnSave();
     }
 }

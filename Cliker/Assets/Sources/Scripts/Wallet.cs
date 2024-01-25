@@ -7,32 +7,37 @@ using Newtonsoft.Json;
 public class Wallet : MonoBehaviour
 {
     public Action<float> OnValueChanged;
+
     [SerializeField] private Diamond _diamond;
     [SerializeField] public float Value; 
+    
     private Abilities _abilities;
     private Save _save;
 
     private void Awake()
-    {
-        _abilities = GetComponent<Abilities>();
+    { 
         _save = GetComponent<Save>();
-            
-        SaveData _saveData = new SaveData(Value, _abilities.ValuePerClick, _abilities.ValuePerSecond);
-        
-        Load();
+        _abilities = GetComponent<Abilities>();
+
+        OnLoad();
+
         _diamond.OnClick += Click;
         StartCoroutine(SecondTick());
-        
-        _save.SaveValue(_saveData);
-        _save.Load(_saveData);
     }
 
-    private void Load()
+    public void OnSave()
     {
-        if (PlayerPrefs.GetFloat("Value") != 0)
-        {
-            Value = PlayerPrefs.GetFloat("Value");
-        }
+        SaveData _saveData = new SaveData(Value, _abilities.ValuePerClick, _abilities.ValuePerSecond);
+        _save.SaveValue(_saveData);
+    }
+
+    public void OnLoad()
+    {
+        SaveData _saveData = new SaveData();
+        _save.Load(_saveData);
+        Value = _saveData.Value;
+        _abilities.ValuePerClick = _saveData.ValuePerClick;
+        _abilities.ValuePerSecond = _saveData.ValuePerSecond;
     }
 
     private void Click()
@@ -46,7 +51,8 @@ public class Wallet : MonoBehaviour
             throw new ArgumentException("Value must be positive!");
 
         Value += amount;
-        PlayerPrefs.SetFloat("Value", Value);
+        
+        OnSave();
         OnValueChanged?.Invoke(Value);
     }
 
@@ -56,6 +62,8 @@ public class Wallet : MonoBehaviour
             throw new ArgumentException("Value must be positive!");
 
         Value -= amount;
+        
+        OnSave();
         OnValueChanged?.Invoke(Value);
     }
 
