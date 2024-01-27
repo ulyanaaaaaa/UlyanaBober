@@ -41,9 +41,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Wallet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/ScrollBarSettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/SettingsButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/SoundGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Save.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/ScrollBarSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/ClickBarSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -57,6 +58,8 @@
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/MusicGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ScrollBarSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ClickObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SoundGame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ClickBarSettings.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2alo7frchdJ5tu9veJrlcUiW0N5" />
@@ -114,6 +117,7 @@
       <workItem from="1706220259482" duration="3421000" />
       <workItem from="1706362403449" duration="6001000" />
       <workItem from="1706383704282" duration="4775000" />
+      <workItem from="1706391633654" duration="777000" />
     </task>
     <servers />
   </component>
