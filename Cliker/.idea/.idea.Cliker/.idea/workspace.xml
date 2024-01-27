@@ -56,6 +56,7 @@
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Diamond.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/MusicGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ScrollBarSettings.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ClickObject.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2alo7frchdJ5tu9veJrlcUiW0N5" />
@@ -112,7 +113,7 @@
       <workItem from="1706218012912" duration="299000" />
       <workItem from="1706220259482" duration="3421000" />
       <workItem from="1706362403449" duration="6001000" />
-      <workItem from="1706383704282" duration="2441000" />
+      <workItem from="1706383704282" duration="4775000" />
     </task>
     <servers />
   </component>
