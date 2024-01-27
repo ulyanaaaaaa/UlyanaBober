@@ -42,8 +42,11 @@
             <e p="ClickObject.cs" t="Include" />
             <e p="ClickText.cs" t="Include" />
             <e p="Diamond.cs" t="Include" />
+            <e p="MusicGame.cs" t="Include" />
             <e p="Save.cs" t="Include" />
             <e p="SaveData.cs" t="Include" />
+            <e p="ScrollBarSettings.cs" t="Include" />
+            <e p="SettingsButton.cs" t="Include" />
             <e p="ShopButton.cs" t="Include" />
             <e p="ShopItem.cs" t="Include" />
             <e p="ShopItemViewer.cs" t="Include" />

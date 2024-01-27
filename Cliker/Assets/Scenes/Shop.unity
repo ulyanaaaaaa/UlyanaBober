@@ -133,11 +133,11 @@ PrefabInstance:
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _wallet
       value: 
-      objectReference: {fileID: 1404704630}
+      objectReference: {fileID: 0}
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _abilities
       value: 
-      objectReference: {fileID: 1404704629}
+      objectReference: {fileID: 0}
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: <Price>k__BackingField
       value: 50
@@ -157,7 +157,7 @@ PrefabInstance:
     - target: {fileID: 3420856097627015614, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _wallet
       value: 
-      objectReference: {fileID: 1404704630}
+      objectReference: {fileID: 0}
     - target: {fileID: 3420856097627015615, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -279,9 +279,9 @@ RectTransform:
   m_Father: {fileID: 1729725082}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -542, y: 1392}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 178, y: -147}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &109880806
@@ -426,7 +426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 545.3, y: 1366.9}
+  m_AnchoredPosition: {x: 545.3, y: 1328}
   m_SizeDelta: {x: 308.9, y: 109.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &175881790
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _counter: {fileID: 175881791}
-  _wallet: {fileID: 1404704630}
+  _wallet: {fileID: 0}
 --- !u!114 &175881791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,6 +706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ValuePerSecond>k__BackingField: 0
   <ValuePerClick>k__BackingField: 1
+  _wallet: {fileID: 1404704630}
 --- !u!114 &1404704630 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8706804855319208256, guid: 79149bed33877784ab9c0f993f851f72, type: 3}
@@ -717,7 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c712109225aa1a3468283fffbf44d030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1404704634
+--- !u!114 &1404704638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -726,12 +727,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1404704620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d4b11b0354aeab448bd9a0d1f50eabe, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f146a8a53140a0969ce71e206a7f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Value: 0
-  ValuePerSecond: 0
-  ValuePerClick: 0
 --- !u!224 &1570852914 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3420856097627015615, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
@@ -1130,11 +1128,11 @@ PrefabInstance:
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _wallet
       value: 
-      objectReference: {fileID: 1404704630}
+      objectReference: {fileID: 0}
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _abilities
       value: 
-      objectReference: {fileID: 1404704629}
+      objectReference: {fileID: 0}
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: <ValuePerClickShop>k__BackingField
       value: 1
@@ -1150,7 +1148,7 @@ PrefabInstance:
     - target: {fileID: 3420856097627015614, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _wallet
       value: 
-      objectReference: {fileID: 1404704630}
+      objectReference: {fileID: 0}
     - target: {fileID: 3420856097627015615, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

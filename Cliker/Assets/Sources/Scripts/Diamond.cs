@@ -6,7 +6,6 @@ public class Diamond : MonoBehaviour
 {
     public Action OnClick;
     public Action OnClickText;
-   
 
     public void OnMouseDown()
     {

@@ -100,7 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _diamond: {fileID: 0}
   Value: 0
-  _abilities: {fileID: 0}
 --- !u!60 &8706804855319208260
 PolygonCollider2D:
   m_ObjectHideFlags: 0
