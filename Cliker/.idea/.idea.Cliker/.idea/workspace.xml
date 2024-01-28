@@ -50,7 +50,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SettingsButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Diamond.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/MusicGame.cs" />
@@ -66,6 +65,7 @@
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Abilities.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Wallet.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Save.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SaveData.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2alo7frchdJ5tu9veJrlcUiW0N5" />
@@ -125,7 +125,8 @@
       <workItem from="1706383704282" duration="4775000" />
       <workItem from="1706391633654" duration="1222000" />
       <workItem from="1706447792897" duration="2558000" />
-      <workItem from="1706460084207" duration="1620000" />
+      <workItem from="1706460084207" duration="2214000" />
+      <workItem from="1706470448111" duration="350000" />
     </task>
     <servers />
   </component>
