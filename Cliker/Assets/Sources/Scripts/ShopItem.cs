@@ -26,26 +26,17 @@ public class ShopItem : MonoBehaviour
     private void Load()
     {
         if (PlayerPrefs.GetFloat("ValuePerClickShop") != 0)
-        {
             ValuePerClickShop = PlayerPrefs.GetFloat("ValuePerClickShop");
-        }
 
         if (PlayerPrefs.GetFloat("ValuePerSecondShop") != 0)
-        {
             ValuePerSecondShop = PlayerPrefs.GetFloat("ValuePerSecondShop");
-        }
 
         if (PlayerPrefs.GetFloat("Price") != 0)
-        {
             Price = PlayerPrefs.GetFloat("Price");
-        }
     }
 
     [ContextMenu("Delete")]
-    private void DeleteSave()
-    {
-        PlayerPrefs.DeleteAll();
-    }
+    private void DeleteSave() => PlayerPrefs.DeleteAll();
 
     private void TryBuy()
     {

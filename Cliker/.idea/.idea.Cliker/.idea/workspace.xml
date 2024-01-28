@@ -41,6 +41,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Wallet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Buttons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/SoundGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Save.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/ScrollBarSettings.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,16 +51,21 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Save.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Abilities.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Wallet.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SettingsButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Diamond.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/MusicGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ScrollBarSettings.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ClickObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SoundGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ClickBarSettings.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Button.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Buttons.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Abilities.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ShopItemViewer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ClickObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ShopItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Wallet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/WalletViewer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2alo7frchdJ5tu9veJrlcUiW0N5" />
@@ -117,7 +123,8 @@
       <workItem from="1706220259482" duration="3421000" />
       <workItem from="1706362403449" duration="6001000" />
       <workItem from="1706383704282" duration="4775000" />
-      <workItem from="1706391633654" duration="777000" />
+      <workItem from="1706391633654" duration="1222000" />
+      <workItem from="1706447792897" duration="2275000" />
     </task>
     <servers />
   </component>

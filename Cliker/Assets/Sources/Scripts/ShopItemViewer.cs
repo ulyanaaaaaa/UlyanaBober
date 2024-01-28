@@ -7,13 +7,14 @@ public class ShopItemViewer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _price;
     [SerializeField] private TextMeshProUGUI _description;
-    [SerializeField] private ShopItem _item;
     [SerializeField] private Wallet _wallet;
     [SerializeField] private Image _background;
     [SerializeField] private Image _image;
+    private ShopItem _item;
 
     private void Awake()
     {
+        _item = GetComponent<ShopItem>();
         UpdateInfo();
         _item.OnUpdate += UpdateInfo;
     }

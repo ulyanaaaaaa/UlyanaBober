@@ -133,11 +133,11 @@ PrefabInstance:
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _wallet
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1404704630}
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _abilities
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1404704629}
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: <Price>k__BackingField
       value: 50
@@ -157,7 +157,7 @@ PrefabInstance:
     - target: {fileID: 3420856097627015614, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _wallet
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1404704630}
     - target: {fileID: 3420856097627015615, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -329,7 +329,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 109880809}
-        m_TargetAssemblyTypeName: ShopButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: MainScene
         m_Mode: 1
         m_Arguments:
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _counter: {fileID: 175881791}
-  _wallet: {fileID: 0}
+  _wallet: {fileID: 1404704630}
 --- !u!114 &175881791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,11 +1128,11 @@ PrefabInstance:
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _wallet
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1404704630}
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _abilities
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1404704629}
     - target: {fileID: 3420856097627015609, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: <ValuePerClickShop>k__BackingField
       value: 1
@@ -1148,7 +1148,7 @@ PrefabInstance:
     - target: {fileID: 3420856097627015614, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: _wallet
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1404704630}
     - target: {fileID: 3420856097627015615, guid: a11276ae4b1021342a317a45954dfab1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

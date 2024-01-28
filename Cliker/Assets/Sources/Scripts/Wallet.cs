@@ -38,10 +38,7 @@ public class Wallet : MonoBehaviour
         _abilities.ValuePerSecond = _saveData.ValuePerSecond;
     }
 
-    private void Click()
-    {
-        AddValue(_abilities.ValuePerClick);
-    }
+    private void Click() => AddValue(_abilities.ValuePerClick);
 
     private void AddValue(float amount)
     {

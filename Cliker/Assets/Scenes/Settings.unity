@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 293270271}
   m_Layer: 5
   m_Name: 'SoundScrollbar '
-  m_TagString: Untagged
+  m_TagString: SoundBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -705,7 +705,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 471842763}
-        m_TargetAssemblyTypeName: SettingsButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: MainScene
         m_Mode: 1
         m_Arguments:
@@ -763,7 +763,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 471842758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0820030e5d7cec644b15deef45e4cdea, type: 3}
+  m_Script: {fileID: 11500000, guid: f260554abf5320b499a2bca33d26ab5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &593654495 stripped
@@ -1177,6 +1177,7 @@ GameObject:
   - component: {fileID: 1554866696}
   - component: {fileID: 1554866695}
   - component: {fileID: 1554866694}
+  - component: {fileID: 1554866697}
   m_Layer: 0
   m_Name: 'Click Source '
   m_TagString: Untagged
@@ -1308,6 +1309,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1554866697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554866693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909dbf028eb92c64685957c29160ad38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645031973
 GameObject:
   m_ObjectHideFlags: 0

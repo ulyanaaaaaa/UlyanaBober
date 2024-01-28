@@ -39,6 +39,7 @@
         <e p="Sources" t="Include">
           <e p="Scripts" t="Include">
             <e p="Abilities.cs" t="Include" />
+            <e p="Buttons.cs" t="Include" />
             <e p="ClickBarSettings.cs" t="Include" />
             <e p="ClickObject.cs" t="Include" />
             <e p="ClickText.cs" t="Include" />
@@ -47,8 +48,6 @@
             <e p="Save.cs" t="Include" />
             <e p="SaveData.cs" t="Include" />
             <e p="ScrollBarSettings.cs" t="Include" />
-            <e p="SettingsButton.cs" t="Include" />
-            <e p="ShopButton.cs" t="Include" />
             <e p="ShopItem.cs" t="Include" />
             <e p="ShopItemViewer.cs" t="Include" />
             <e p="SoundGame.cs" t="Include" />
