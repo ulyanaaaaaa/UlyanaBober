@@ -7,7 +7,7 @@ public class Abilities : MonoBehaviour
     [field: SerializeField] public float ValuePerSecond { get; set; } 
     [field: SerializeField] public float ValuePerClick { get; set; }
 
-    [SerializeField] private Wallet _wallet;
+    private Wallet _wallet;
 
     private void Awake()
     {

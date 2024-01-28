@@ -32,7 +32,7 @@ public class Wallet : MonoBehaviour
     public void OnLoad()
     {
         SaveData _saveData = new SaveData();
-        _save.Load(_saveData);
+        _saveData = _save.Load();
         Value = _saveData.Value;
         _abilities.ValuePerClick = _saveData.ValuePerClick;
         _abilities.ValuePerSecond = _saveData.ValuePerSecond;

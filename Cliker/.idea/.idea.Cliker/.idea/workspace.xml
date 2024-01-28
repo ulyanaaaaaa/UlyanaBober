@@ -50,7 +50,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Save.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/SettingsButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Diamond.cs" />
@@ -60,12 +59,13 @@
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ClickBarSettings.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Button.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Buttons.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Abilities.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ShopItemViewer.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ClickObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/ShopItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Wallet.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/WalletViewer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Abilities.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Wallet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Save.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2alo7frchdJ5tu9veJrlcUiW0N5" />
@@ -124,7 +124,8 @@
       <workItem from="1706362403449" duration="6001000" />
       <workItem from="1706383704282" duration="4775000" />
       <workItem from="1706391633654" duration="1222000" />
-      <workItem from="1706447792897" duration="2275000" />
+      <workItem from="1706447792897" duration="2558000" />
+      <workItem from="1706460084207" duration="1620000" />
     </task>
     <servers />
   </component>
