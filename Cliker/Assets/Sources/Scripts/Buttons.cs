@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Buttons : MonoBehaviour
+public class Buttons : MonoBehaviour //TODO:lvl load
 {
-    public void MainScene() => SceneManager.LoadScene("SampleScene");
+    public void LoadMainScene() => SceneManager.LoadScene("SampleScene");
 
-    public void ShopScene() => SceneManager.LoadScene("Shop");
+    public void LoadShopScene() => SceneManager.LoadScene("Shop");
 
-    public void SettingsScene() => SceneManager.LoadScene("Settings");
+    public void LoadSettingsScene() => SceneManager.LoadScene("Settings");
 }

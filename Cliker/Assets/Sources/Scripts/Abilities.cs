@@ -12,6 +12,10 @@ public class Abilities : MonoBehaviour
     private void Awake()
     {
         _wallet = GetComponent<Wallet>();
+    }
+
+    private void Start()
+    {
         _wallet.OnLoad();
     }
 
