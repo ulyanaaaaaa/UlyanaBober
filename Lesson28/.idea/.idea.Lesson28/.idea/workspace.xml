@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1535296d-7b56-4cf6-ba8f-1b4d2d046e99" name="Default Changelist" comment="" />
+    <list default="true" id="30363578-55c0-4a1e-bf2e-3d46e3a0edbb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/NewBehaviourScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Person.cs" />
-      <option value="$PROJECT_DIR$/Assets/Health.cs" />
+      <option value="$PROJECT_DIR$/Assets/SaveService.cs" />
       <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Player.cs" />
     </changedPaths>
   </component>
-  <component name="ProjectId" id="2bdYLUBOxpfe0nN4cRwdPup1FTL" />
+  <component name="ProjectId" id="2bjAGCQe0HnvSxzVZ8P66eEuPQI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,19 +26,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1535296d-7b56-4cf6-ba8f-1b4d2d046e99" name="Default Changelist" comment="" />
-      <created>1706546369438</created>
+      <changelist id="30363578-55c0-4a1e-bf2e-3d46e3a0edbb" name="Default Changelist" comment="" />
+      <created>1706718019807</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706546369438</updated>
-      <workItem from="1706546373628" duration="2316000" />
-      <workItem from="1706640641314" duration="2391000" />
+      <updated>1706718019807</updated>
+      <workItem from="1706718025103" duration="4056000" />
+      <workItem from="1706794102949" duration="16000" />
     </task>
     <servers />
   </component>
