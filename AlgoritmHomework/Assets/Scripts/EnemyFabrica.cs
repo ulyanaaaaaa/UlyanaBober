@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class EnemyFabrica : MonoBehaviour
 {
-    [SerializeField] private EntryPoint _entryPoint;
-    
     private Enemy _redEnemy;
     private Enemy _greenEnemy;
     private Enemy _blackEnemy;
@@ -19,18 +17,33 @@ public class EnemyFabrica : MonoBehaviour
         _blueEnemy = Resources.Load<Enemy>("BlueEnemy");
     }
 
-    public void CreateRedEnemy(Transform position) =>
-        _entryPoint.SetupEnemies.Add(Instantiate(_redEnemy, position.position, Quaternion.identity).SetHealth(100));
+    public void CreateRedEnemy(Vector3 position)
+    {
+        Enemy enemy = Instantiate(_redEnemy, position, Quaternion.identity);
+        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Red));
+    }
 
-    public void CreateGreenEnemy(Transform position) =>
-        _entryPoint.SetupEnemies.Add(Instantiate(_greenEnemy, position.position, Quaternion.identity).SetHealth(75));
+    public void CreateGreenEnemy(Vector3 position)
+    {
+        Enemy enemy = Instantiate(_greenEnemy, position, Quaternion.identity);
+        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Green));
+    }
 
-    public void CreateBlackEnemy(Transform position) =>
-        _entryPoint.SetupEnemies.Add(Instantiate(_blackEnemy, position.position, Quaternion.identity).SetHealth(21));
-    
-    public void CreateWhiteEnemy(Transform position) => 
-        _entryPoint.SetupEnemies.Add(Instantiate(_whiteEnemy, position.position, Quaternion.identity).SetHealth(55));
+    public void CreateBlackEnemy(Vector3 position)
+    {
+        Enemy enemy = Instantiate(_blackEnemy, position, Quaternion.identity);
+        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Black));
+    }
 
-    public void CreateBlueEnemy(Transform position) =>
-        _entryPoint.SetupEnemies.Add(Instantiate(_blueEnemy, position.position, Quaternion.identity).SetHealth(86));
+    public void CreateWhiteEnemy(Vector3 position)
+    {
+        Enemy enemy = Instantiate(_whiteEnemy, position, Quaternion.identity);
+        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.White));
+    }
+
+    public void CreateBlueEnemy(Vector3 position)
+    {
+        Enemy enemy = Instantiate(_blueEnemy, position, Quaternion.identity);
+        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Blue));
+    }
 }

@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private EntryPoint _entryPoint;
-    
     private EnemyFabrica _enemyFabrica;
     private Coroutine _spawnTick;
 
@@ -14,38 +12,28 @@ public class EnemySpawner : MonoBehaviour
         _spawnTick = StartCoroutine(SpawnTick());
     }
 
-    private void Setup()
+    private void EnemyCreated(Vector3 position)
     {
-        foreach (IEntryPointSetupEnemy setupEnemy in _entryPoint.SetupEnemies)
-            setupEnemy.Setup(_entryPoint.EnemyCreated);
-    }
-
-    private void EnemyCreated(Transform position)
-    {
-        IEntryPointSetupEnemy enemyCreated = null;
-
         int random = Random.Range(0, 100);
 
         if (random < 20)
-            _enemyFabrica.CreateRedEnemy(position.transform);
+            _enemyFabrica.CreateRedEnemy(position);
         if (random >= 20 && random < 40)
-            _enemyFabrica.CreateGreenEnemy(position.transform);
+            _enemyFabrica.CreateGreenEnemy(position);
         if (random >= 40 && random < 60)
-            _enemyFabrica.CreateBlackEnemy(position.transform);
+            _enemyFabrica.CreateBlackEnemy(position);
         if (random >= 60 && random < 80)
-            _enemyFabrica.CreateBlueEnemy(position.transform);
+            _enemyFabrica.CreateBlueEnemy(position);
         if (random >= 80)
-            _enemyFabrica.CreateWhiteEnemy(position.transform);
+            _enemyFabrica.CreateWhiteEnemy(position);
     }
 
     private IEnumerator SpawnTick()
     {
         while (true)
         {
-            yield return new WaitForSeconds(2);
-            
-            foreach (Transform point in _entryPoint.EnemyStartPoints)
-                EnemyCreated(point);
+            yield return new WaitForSeconds(2); 
+            EnemyCreated(new Vector3(Random.Range(-10f, 10f), 0f, Random.Range(-10f, 10f)));
         }
     }
 }

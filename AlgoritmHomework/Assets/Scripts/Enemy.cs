@@ -1,25 +1,53 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IEntryPointSetupEnemy
+public enum Enemies
 {
-    enum Enemies
-    {
-        Red,
-        Green,
-        Black,
-        Blue,
-        White
-    }
+    Red,
+    Green,
+    Black,
+    Blue,
+    White
+}
 
-    private float _health;
-    private string type;
+public class Enemy : MonoBehaviour
+{
+    [SerializeField] private int _health;
+    private Enemies _type;
     private Transform _enemy;
 
-    public void Setup(Enemy enemy) => _enemy = enemy.transform;
+    public List<Enemy> CreatedEnemy = new List<Enemy>();
 
-    public Enemy SetHealth(float health)
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+            ListSort(Enemies.Black);
+        if (Input.GetKeyDown(KeyCode.S))
+            ListSort(Enemies.Red);
+        if (Input.GetKeyDown(KeyCode.E))
+            ListSort(Enemies.Blue);
+    }
+
+    public Enemy SetHealth(int health)
     {
         _health = health;
         return this;
+    }
+
+    public Enemy SetType(Enemies type)
+    {
+        _type = type;
+        return this;
+    }
+    
+    private void ListSort(Enemies type)
+    {
+        var selectedEnemies = from enemy in CreatedEnemy
+            where enemy._type == type
+            select enemy;
+        
+        foreach (var enemy in selectedEnemies)
+            Debug.Log(enemy);
     }
 }
