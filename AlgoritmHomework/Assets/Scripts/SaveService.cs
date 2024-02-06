@@ -9,14 +9,23 @@ using UnityEngine;
 public class SaveService : MonoBehaviour
 {
     private string _filePath;
-    private EnemyFabrica _enemyFabrica;
-    
+    [SerializeField] private EnemyFabrica _enemyFabrica;
+
     public LevelSaveData SaveData { get; private set; }
 
     private void OnEnable()
     {
         _filePath = Application.persistentDataPath + "/Save.json";
-        Load();
+
+        if (File.Exists(_filePath))
+        {
+            Load();
+        }
+        else
+        {
+            SaveData = new LevelSaveData();
+            Save();
+        }
     }
 
     private void Awake()
@@ -27,11 +36,19 @@ public class SaveService : MonoBehaviour
     [ContextMenu("Save")]
     public void Save()
     {
-        using (FileStream file = File.Create(_filePath))
+        if (SaveData != null)
         {
-            new BinaryFormatter().Serialize(file, SaveData);
+            using (FileStream file = File.Create(_filePath))
+            {
+                new BinaryFormatter().Serialize(file, SaveData);
+            }
+        }
+        else
+        {
+            Debug.Log("Объект SaveData равен null");
         }
     }
+
 
     [ContextMenu("Load")]
     public void Load()
@@ -41,6 +58,7 @@ public class SaveService : MonoBehaviour
             object loadedData = new BinaryFormatter().Deserialize(file);
             SaveData = (LevelSaveData)loadedData;
         }
+        LoadLevel();
     }
 
     private void LoadLevel()
