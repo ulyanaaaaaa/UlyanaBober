@@ -833,6 +833,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2ca7f5e42b5874bb0a2a3dc242d098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _factories:
+  - {fileID: 1795097029}
+  - {fileID: 1435112785}
+  - {fileID: 87625762}
+  - {fileID: 1424776936}
+  - {fileID: 1932102779}
   _storage: {fileID: 1087505983}
 --- !u!65 &1438681229
 BoxCollider:

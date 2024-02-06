@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Factory : MonoBehaviour
 {
-    public List<Resource> Resources = new List<Resource>();
+    [SerializeField] public List<Resource> Resources = new List<Resource>();
 
     private void Start()
     {
