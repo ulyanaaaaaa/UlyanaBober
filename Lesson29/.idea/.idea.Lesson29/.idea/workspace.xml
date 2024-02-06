@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2ae7c18-2dd9-4aa2-bccb-dcb7623fccbd" name="Default Changelist" comment="" />
+    <list default="true" id="d80d0def-ccb6-410b-978c-ce35671c0470" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ISaveData.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemiesFabrica.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemySaveData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ISaveData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyFabrica.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SaveService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resource.cs" />
+      <option value="$PROJECT_DIR$/Assets/Factory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Worker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Storage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Storage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Worker.cs" />
     </changedPaths>
   </component>
-  <component name="ProjectId" id="2bpoHIwj4T0dr1rUFCuaiBBL3MJ" />
+  <component name="ProjectId" id="2bxKE9NWEhTOkxWcANK9aISLRD8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,11 +27,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -43,17 +36,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b2ae7c18-2dd9-4aa2-bccb-dcb7623fccbd" name="Default Changelist" comment="" />
-      <created>1706921294969</created>
+      <changelist id="d80d0def-ccb6-410b-978c-ce35671c0470" name="Default Changelist" comment="" />
+      <created>1707151179011</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706921294969</updated>
-      <workItem from="1706921300674" duration="5056000" />
-      <workItem from="1706996860534" duration="4252000" />
-      <workItem from="1707001192032" duration="95000" />
-      <workItem from="1707085272660" duration="1307000" />
-      <workItem from="1707091939716" duration="25000" />
-      <workItem from="1707245551397" duration="6921000" />
+      <updated>1707151179011</updated>
+      <workItem from="1707151185932" duration="4685000" />
+      <workItem from="1707228016258" duration="2791000" />
+      <workItem from="1707244383564" duration="615000" />
     </task>
     <servers />
   </component>

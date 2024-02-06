@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[RequireComponent(typeof(EnemySpawner))]
+
 public class EnemyFabrica : MonoBehaviour
 {
     private Enemy _redEnemy;
@@ -17,33 +19,38 @@ public class EnemyFabrica : MonoBehaviour
         _blueEnemy = Resources.Load<Enemy>("BlueEnemy");
     }
 
-    public void CreateRedEnemy(Vector3 position)
+    public Enemy CreateRedEnemy(Vector3 position)
     {
         Enemy enemy = Instantiate(_redEnemy, position, Quaternion.identity);
         enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Red));
+        return enemy;
     }
 
-    public void CreateGreenEnemy(Vector3 position)
+    public Enemy CreateGreenEnemy(Vector3 position)
     {
         Enemy enemy = Instantiate(_greenEnemy, position, Quaternion.identity);
         enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Green));
+        return enemy;
     }
 
-    public void CreateBlackEnemy(Vector3 position)
+    public Enemy CreateBlackEnemy(Vector3 position)
     {
         Enemy enemy = Instantiate(_blackEnemy, position, Quaternion.identity);
         enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Black));
+        return enemy;
     }
 
-    public void CreateWhiteEnemy(Vector3 position)
+    public Enemy CreateWhiteEnemy(Vector3 position)
     {
         Enemy enemy = Instantiate(_whiteEnemy, position, Quaternion.identity);
         enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.White));
+        return enemy;
     }
 
-    public void CreateBlueEnemy(Vector3 position)
+    public Enemy CreateBlueEnemy(Vector3 position)
     {
         Enemy enemy = Instantiate(_blueEnemy, position, Quaternion.identity);
         enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Blue));
+        return enemy;
     }
 }
