@@ -32,8 +32,7 @@ public class SaveService : MonoBehaviour
     {
         _enemyFabrica = GetComponent<EnemyFabrica>();
     }
-
-    [ContextMenu("Save")]
+    
     public void Save()
     {
         if (SaveData != null)
@@ -45,12 +44,10 @@ public class SaveService : MonoBehaviour
         }
         else
         {
-            Debug.Log("Объект SaveData равен null");
+            Debug.Log("SaveData is null");
         }
     }
-
-
-    [ContextMenu("Load")]
+    
     public void Load()
     {
         using (FileStream file = File.Open(_filePath, FileMode.Open))
@@ -68,17 +65,7 @@ public class SaveService : MonoBehaviour
             if (data.Type == typeof(Enemy))
             {
                 EnemySaveData enemySaveData = (EnemySaveData) data;
-                
-                if (data.TypeEnemy == Enemies.Black)
-                    _enemyFabrica.CreateBlackEnemy(enemySaveData.Position.ToVector()).Load(data.Id);
-                if (data.TypeEnemy == Enemies.White)
-                    _enemyFabrica.CreateWhiteEnemy(enemySaveData.Position.ToVector()).Load(data.Id);
-                if (data.TypeEnemy == Enemies.Red)
-                    _enemyFabrica.CreateRedEnemy(enemySaveData.Position.ToVector()).Load(data.Id);
-                if (data.TypeEnemy == Enemies.Green)
-                    _enemyFabrica.CreateGreenEnemy(enemySaveData.Position.ToVector()).Load(data.Id);
-                if (data.TypeEnemy == Enemies.Blue)
-                    _enemyFabrica.CreateBlueEnemy(enemySaveData.Position.ToVector()).Load(data.Id);
+                _enemyFabrica.CreateEnemy(enemySaveData.Position.ToVector(), data.Color).Load(data.Id);
             }
         }
     }
@@ -119,14 +106,14 @@ public class SaveData
 {
     public string Id { get; private set; }
     public Type Type { get; private set; }
-    public Enemies TypeEnemy { get; private set; }
+    public EnemyColors Color { get; private set; }
     
 
-    public SaveData(string id, Type type, Enemies typeEnemy)
+    public SaveData(string id, Type type, EnemyColors color)
     {
         Id = id;
         Type = type;
-        TypeEnemy = typeEnemy;
+        Color = color;
     }
 }
 

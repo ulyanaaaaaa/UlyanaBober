@@ -4,53 +4,46 @@ using UnityEngine;
 
 public class EnemyFabrica : MonoBehaviour
 {
-    private Enemy _redEnemy;
-    private Enemy _greenEnemy;
-    private Enemy _blackEnemy;
-    private Enemy _whiteEnemy;
-    private Enemy _blueEnemy;
-
-    private void Awake()
+    public Enemy CreateEnemy(Vector3 position, EnemyColors color)
     {
-        _redEnemy = Resources.Load<Enemy>("RedEnemy");
-        _greenEnemy = Resources.Load<Enemy>("GreenEnemy");
-        _blackEnemy = Resources.Load<Enemy>("BlackEnemy");
-        _whiteEnemy = Resources.Load<Enemy>("WhiteEnemy");
-        _blueEnemy = Resources.Load<Enemy>("BlueEnemy");
-    }
+        Enemy enemy = null;
 
-    public Enemy CreateRedEnemy(Vector3 position)
-    {
-        Enemy enemy = Instantiate(_redEnemy, position, Quaternion.identity);
-        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Red));
-        return enemy;
-    }
-
-    public Enemy CreateGreenEnemy(Vector3 position)
-    {
-        Enemy enemy = Instantiate(_greenEnemy, position, Quaternion.identity);
-        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Green));
-        return enemy;
-    }
-
-    public Enemy CreateBlackEnemy(Vector3 position)
-    {
-        Enemy enemy = Instantiate(_blackEnemy, position, Quaternion.identity);
-        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Black));
-        return enemy;
-    }
-
-    public Enemy CreateWhiteEnemy(Vector3 position)
-    {
-        Enemy enemy = Instantiate(_whiteEnemy, position, Quaternion.identity);
-        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.White));
-        return enemy;
-    }
-
-    public Enemy CreateBlueEnemy(Vector3 position)
-    {
-        Enemy enemy = Instantiate(_blueEnemy, position, Quaternion.identity);
-        enemy.CreatedEnemy.Add(enemy.SetHealth(Random.Range(0, 100)).SetType(Enemies.Blue));
+        switch (color)
+        {
+            case EnemyColors.Black:
+                enemy = Instantiate(Resources.Load<Enemy>("BlackEnemy"), position, Quaternion.identity)
+                    .SetHealth(Random.Range(0, 100))
+                    .SetType(color);
+                enemy.Save(EnemyColors.Black);
+                break;
+            case EnemyColors.Blue:
+                enemy = Instantiate(Resources.Load<Enemy>("BlueEnemy"), position, Quaternion.identity)
+                    .SetHealth(Random.Range(0, 100))
+                    .SetType(color);
+                enemy.Save(EnemyColors.Blue);
+                break;
+            case EnemyColors.Green:
+                enemy = Instantiate(Resources.Load<Enemy>("GreenEnemy"), position, Quaternion.identity)
+                    .SetHealth(Random.Range(0, 100))
+                    .SetType(color);
+                enemy.Save(EnemyColors.Green);
+                break;
+            case EnemyColors.White:
+                enemy = Instantiate(Resources.Load<Enemy>("WhiteEnemy"), position, Quaternion.identity)
+                    .SetHealth(Random.Range(0, 100))
+                    .SetType(color);
+                enemy.Save(EnemyColors.White);
+                break;
+            case EnemyColors.Red:
+                enemy = Instantiate(Resources.Load<Enemy>("RedEnemy"), position, Quaternion.identity)
+                    .SetHealth(Random.Range(0, 100))
+                    .SetType(color);
+                enemy.Save(EnemyColors.Red);
+                break;
+            default:
+                Debug.Log("Wrong color");
+                break;
+        }
         return enemy;
     }
 }

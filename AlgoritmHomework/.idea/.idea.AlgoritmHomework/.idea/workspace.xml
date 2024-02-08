@@ -14,9 +14,9 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemiesFabrica.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemySaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ISaveData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyFabrica.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveService.cs" />
@@ -54,6 +54,7 @@
       <workItem from="1707085272660" duration="1307000" />
       <workItem from="1707091939716" duration="25000" />
       <workItem from="1707245551397" duration="10113000" />
+      <workItem from="1707402837595" duration="4741000" />
     </task>
     <servers />
   </component>

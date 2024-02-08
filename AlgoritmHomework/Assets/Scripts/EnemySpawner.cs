@@ -17,15 +17,15 @@ public class EnemySpawner : MonoBehaviour
         int random = Random.Range(0, 100);
 
         if (random < 20)
-            _enemyFabrica.CreateRedEnemy(position);
+            _enemyFabrica.CreateEnemy(position, EnemyColors.Black);
         if (random >= 20 && random < 40)
-            _enemyFabrica.CreateGreenEnemy(position);
+            _enemyFabrica.CreateEnemy(position, EnemyColors.Blue);
         if (random >= 40 && random < 60)
-            _enemyFabrica.CreateBlackEnemy(position);
+            _enemyFabrica.CreateEnemy(position, EnemyColors.Green);
         if (random >= 60 && random < 80)
-            _enemyFabrica.CreateBlueEnemy(position);
+            _enemyFabrica.CreateEnemy(position, EnemyColors.Red);
         if (random >= 80)
-            _enemyFabrica.CreateWhiteEnemy(position);
+            _enemyFabrica.CreateEnemy(position, EnemyColors.White);
     }
 
     private IEnumerator SpawnTick()
