@@ -6,10 +6,10 @@ public class Factory : MonoBehaviour
 {
     [SerializeField] public List<Resource> Resources = new List<Resource>();
 
-    private void Start()
-    {
-        StartCoroutine(AddResourcesTick());
-    }
+    private Coroutine _addResources;
+
+    private void Start() =>
+        _addResources = StartCoroutine(AddResourcesTick());
 
     private IEnumerator AddResourcesTick()
     {

@@ -9,10 +9,11 @@ public class Worker : MonoBehaviour
     [SerializeField] private List<Resource> _newResources = new List<Resource>();
     [SerializeField] private Storage _storage;
 
-    private void Start()
-    {
-        StartCoroutine(NewResourcesTick());
-    }
+    private Coroutine _newResourcesTick;
+
+    private void Start() =>
+        _newResourcesTick = StartCoroutine(NewResourcesTick());
+    
     
     private IEnumerator NewResourcesTick()
     {
@@ -32,7 +33,10 @@ public class Worker : MonoBehaviour
             }
             
             transform.DOMove(_storage.transform.position, 1);
-            _storage.AddWorkResources(_newResources);
+            yield return new WaitForSeconds(1);
+            
+            if (Vector3.Distance(_storage.transform.position, transform.position) < 1)
+                _storage.AddWorkResources(_newResources);
         }
     }
 }

@@ -29,8 +29,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -49,7 +52,7 @@
       <workItem from="1707257058150" duration="733000" />
       <workItem from="1707414430689" duration="28000" />
       <workItem from="1707465789428" duration="16000" />
-      <workItem from="1707565626330" duration="1674000" />
+      <workItem from="1707565626330" duration="1849000" />
     </task>
     <servers />
   </component>
