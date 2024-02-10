@@ -490,7 +490,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 642387413}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: ShopScene
+        m_MethodName: LoadShopScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1210,7 +1210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1794343674}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: SettingsScene
+        m_MethodName: LoadSettingsScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

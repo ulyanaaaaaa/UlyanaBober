@@ -706,7 +706,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 471842763}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: MainScene
+        m_MethodName: LoadMainScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

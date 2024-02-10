@@ -22,8 +22,13 @@ public class Worker : MonoBehaviour
             {
                 yield return new WaitForSeconds(5);
                 transform.DOMove(factory.transform.position, 1);
-                _newResources.AddRange(factory.Resources);
-                factory.Resources.Clear();
+                yield return new WaitForSeconds(1);
+                
+                if (Vector3.Distance(factory.transform.position, transform.position) < 1)
+                {
+                    _newResources.AddRange(factory.Resources);
+                    factory.Resources.Clear();
+                }
             }
             
             transform.DOMove(_storage.transform.position, 1);
