@@ -1,19 +1,21 @@
-using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] public float Health;
-    public Action OnDie;
+    [SerializeField] private float _health;
 
-    private void Awake()
+    private void Die(Spawner spawner)
     {
-        OnDie += Die;
+        spawner.DeleteEnemy(this);
+        Destroy(gameObject);
     }
 
-    private void Die()
+    public void Hit(float damage, Spawner spawner)
     {
-        Destroy(gameObject);
-        
+        _health -= damage;
+        if (_health <= 0)
+        {
+            Die(spawner);
+        }
     }
 }

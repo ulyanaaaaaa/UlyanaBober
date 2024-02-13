@@ -287,8 +287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawner: {fileID: 630141880}
-  _coins: 0
-  _damage: 0
+  _coins: 10
+  _damage: 100
 --- !u!212 &973516752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0ed915332d6a0d44959715451d0f7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
+  _health: 100
 --- !u!212 &1597580117
 SpriteRenderer:
   m_ObjectHideFlags: 0

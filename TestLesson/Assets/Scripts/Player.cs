@@ -10,21 +10,25 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Hit(NearEnemy(), _damage);
-            _coins++;
+            if (_spawner.Enemies.Count >= 1)
+            {
+                Hit(NearEnemy(), _damage);
+                _coins++;
+            }
         }
     }
     
     private Enemy NearEnemy()
     {
         Enemy nearEnemy = _spawner.Enemies[0];
-        
+
         for (int i = 0; i < _spawner.Enemies.Count; i++)
         {
             if (Vector2.Distance(_spawner.Enemies[i].transform.position, transform.position) <
                 Vector2.Distance(nearEnemy.transform.position, transform.position))
             {
                 nearEnemy = _spawner.Enemies[i];
+                Debug.Log(nearEnemy);
             }
         }
 
@@ -33,6 +37,6 @@ public class Player : MonoBehaviour
 
     private void Hit(Enemy enemy, float damage)
     {
-        enemy.Health -= damage;
+        enemy.Hit(damage, _spawner);
     }
 }

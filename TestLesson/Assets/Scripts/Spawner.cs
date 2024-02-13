@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +6,9 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public List<Enemy> Enemies = new List<Enemy>();
+    public Action OnDelete;
     
     private Coroutine _spawnTick;
-    [SerializeField] private Enemy _enemy;
     [SerializeField] private Player _player;
     [SerializeField] private float _delay;
     [SerializeField] private float _speed;
@@ -21,10 +22,17 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
-            Enemy enemy = Instantiate(_enemy, transform.position, Quaternion.identity);
+            Enemy enemy = Instantiate(Resources.Load<Enemy>("Enemy"), transform.position, Quaternion.identity);
             Enemies.Add(enemy);
+            Debug.Log("Start");
             enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, _player.transform.position, _speed);
+            Debug.Log("Finish");
             yield return new WaitForSeconds(_delay);
         }
+    }
+
+    public void DeleteEnemy(Enemy enemy)
+    {
+        Enemies.Remove(enemy);
     }
 }
