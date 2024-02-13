@@ -9,9 +9,9 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2cHI5Ig8y5nFs4uNuh5iGHb6cGd" />
@@ -39,7 +39,8 @@
       <updated>1707761895224</updated>
       <workItem from="1707761899271" duration="2267000" />
       <workItem from="1707825122555" duration="4098000" />
-      <workItem from="1707841965811" duration="5655000" />
+      <workItem from="1707841965811" duration="9294000" />
+      <workItem from="1707857392306" duration="961000" />
     </task>
     <servers />
   </component>

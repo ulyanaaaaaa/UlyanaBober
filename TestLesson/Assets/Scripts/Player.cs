@@ -1,10 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private Spawner _spawner;
-    [SerializeField] private int _coins;
+    [SerializeField] private int _coinsCount;
     [SerializeField] private float _damage;
+    [SerializeField] private TextMeshProUGUI _coinsText;
 
     private void Update()
     {
@@ -13,7 +15,8 @@ public class Player : MonoBehaviour
             if (_spawner.Enemies.Count >= 1)
             {
                 Hit(NearEnemy(), _damage);
-                _coins++;
+                _coinsCount++;
+                _coinsText.text = $"Coins: {_coinsCount.ToString()}";
             }
         }
     }
@@ -28,7 +31,6 @@ public class Player : MonoBehaviour
                 Vector2.Distance(nearEnemy.transform.position, transform.position))
             {
                 nearEnemy = _spawner.Enemies[i];
-                Debug.Log(nearEnemy);
             }
         }
 

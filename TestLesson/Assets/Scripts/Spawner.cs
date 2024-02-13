@@ -11,7 +11,6 @@ public class Spawner : MonoBehaviour
     private Coroutine _spawnTick;
     [SerializeField] private Player _player;
     [SerializeField] private float _delay;
-    [SerializeField] private float _speed;
 
     private void Awake()
     {
@@ -24,9 +23,7 @@ public class Spawner : MonoBehaviour
         {
             Enemy enemy = Instantiate(Resources.Load<Enemy>("Enemy"), transform.position, Quaternion.identity);
             Enemies.Add(enemy);
-            Debug.Log("Start");
-            enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, _player.transform.position, _speed);
-            Debug.Log("Finish");
+            enemy.Movement(_player);
             yield return new WaitForSeconds(_delay);
         }
     }
