@@ -14,10 +14,10 @@
       <option value="$PROJECT_DIR$/Assets/Factory.cs" />
       <option value="$PROJECT_DIR$/Assets/Worker.cs" />
       <option value="$PROJECT_DIR$/Assets/Storage.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Resource.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Factory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Storage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Factory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Worker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Resource.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2bxKE9NWEhTOkxWcANK9aISLRD8" />
@@ -53,6 +53,7 @@
       <workItem from="1707414430689" duration="28000" />
       <workItem from="1707465789428" duration="16000" />
       <workItem from="1707565626330" duration="1849000" />
+      <workItem from="1707567983966" duration="300000" />
     </task>
     <servers />
   </component>
