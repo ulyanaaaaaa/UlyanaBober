@@ -16,10 +16,7 @@ public class Enemy : MonoBehaviour
     public void Movement(Player player)
     {
         Debug.Log("Move");
-        
-        //transform.position = Vector2.MoveTowards(transform.position, player.transform.position, _speed);
-        Vector3 direction = (player.transform.position - transform.position).normalized;
-        _rigidbody.velocity = direction * _speed;
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, _speed);
     }
 
     private void Die(Spawner spawner)

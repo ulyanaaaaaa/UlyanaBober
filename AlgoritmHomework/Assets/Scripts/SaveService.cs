@@ -10,6 +10,7 @@ public class SaveService : MonoBehaviour
 {
     private string _filePath;
     [SerializeField] private EnemyFabrica _enemyFabrica;
+    [SerializeField] private SaveService _saveService;
 
     public LevelSaveData SaveData { get; private set; }
 
@@ -31,6 +32,7 @@ public class SaveService : MonoBehaviour
     private void Awake()
     {
         _enemyFabrica = GetComponent<EnemyFabrica>();
+        _saveService = GetComponent<SaveService>();
     }
     
     public void Save()

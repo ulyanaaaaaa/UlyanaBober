@@ -1,9 +1,16 @@
 using UnityEngine;
 
 [RequireComponent(typeof(EnemySpawner))]
+[RequireComponent(typeof(SaveService))]
 
 public class EnemyFabrica : MonoBehaviour
 {
+    private SaveService _saveService;
+
+    private void Awake()
+    {
+        _saveService = GetComponent<SaveService>();
+    }
     public Enemy CreateEnemy(Vector3 position, EnemyColors color)
     {
         Enemy enemy = null;

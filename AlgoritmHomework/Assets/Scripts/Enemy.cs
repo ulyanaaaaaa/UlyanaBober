@@ -16,10 +16,10 @@ public enum EnemyColors
 public class Enemy : MonoBehaviour, ISaveData
 {
     [SerializeField] private int _health;
-    [SerializeField] private SaveService _saveService;
-    
+
     private EnemyColors _type;
     private Transform _enemy;
+    [SerializeField] private SaveService _saveService;
 
     [field: SerializeField] public string Id { get; set; } = "";
 
