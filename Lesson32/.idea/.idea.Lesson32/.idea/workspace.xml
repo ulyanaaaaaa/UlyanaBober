@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="130ed9f7-deb4-4f23-9abb-fdefd09ce111" name="Default Changelist" comment="" />
+    <list default="true" id="e439e747-cdfe-4ae6-aa23-eaff5f80ee83" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayerMode/PlayerMovementTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/EditMode/Tests/PlayerTest.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/Tests/PlayerTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/PlayerMode/PlayerMovementTests.cs" />
     </changedPaths>
   </component>
-  <component name="ProjectId" id="2cHI5Ig8y5nFs4uNuh5iGHb6cGd" />
+  <component name="ProjectId" id="2cMle4NdFl2tFxKoXxAo6S56Xcn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,26 +27,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="130ed9f7-deb4-4f23-9abb-fdefd09ce111" name="Default Changelist" comment="" />
-      <created>1707761895224</created>
+      <changelist id="e439e747-cdfe-4ae6-aa23-eaff5f80ee83" name="Default Changelist" comment="" />
+      <created>1707929431818</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707761895224</updated>
-      <workItem from="1707761899271" duration="2267000" />
-      <workItem from="1707825122555" duration="4098000" />
-      <workItem from="1707841965811" duration="9294000" />
-      <workItem from="1707857392306" duration="1007000" />
-      <workItem from="1707911396491" duration="56000" />
-      <workItem from="1707940298602" duration="1190000" />
+      <updated>1707929431818</updated>
+      <workItem from="1707929435714" duration="2450000" />
+      <workItem from="1707932785718" duration="433000" />
     </task>
     <servers />
   </component>

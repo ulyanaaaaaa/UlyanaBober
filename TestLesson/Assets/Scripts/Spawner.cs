@@ -6,8 +6,6 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public List<Enemy> Enemies = new List<Enemy>();
-    public Action OnDelete;
-    
     private Coroutine _spawnTick;
     [SerializeField] private Player _player;
     [SerializeField] private float _delay;
@@ -23,7 +21,7 @@ public class Spawner : MonoBehaviour
         {
             Enemy enemy = Instantiate(Resources.Load<Enemy>("Enemy"), transform.position, Quaternion.identity);
             Enemies.Add(enemy);
-            enemy.Movement(_player);
+            enemy.Setup(_player, this);
             yield return new WaitForSeconds(_delay);
         }
     }

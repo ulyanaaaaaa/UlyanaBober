@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
         {
             if (_spawner.Enemies.Count >= 1)
             {
-                Hit(NearEnemy(), _damage);
+                NearEnemy().Hit(_damage);
                 _coinsCount++;
                 _coinsText.text = $"Coins: {_coinsCount.ToString()}";
             }
@@ -35,10 +35,5 @@ public class Player : MonoBehaviour
         }
 
         return nearEnemy;
-    }
-
-    private void Hit(Enemy enemy, float damage)
-    {
-        enemy.Hit(damage, _spawner);
     }
 }

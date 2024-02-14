@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemies: []
   _player: {fileID: 973516751}
-  _delay: 2
+  _delay: 0.5
 --- !u!4 &630141881
 Transform:
   m_ObjectHideFlags: 0
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawner: {fileID: 630141880}
   _coinsCount: 0
-  _damage: 100
+  _damage: 50
   _coinsText: {fileID: 1566777826}
 --- !u!212 &973516752
 SpriteRenderer:
@@ -451,7 +451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973516750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.68, y: -2.12, z: 0}
+  m_LocalPosition: {x: -7.72, y: -2.65, z: 0}
   m_LocalScale: {x: 1.9294, y: 4.7175, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -478,7 +478,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &973516755
 BoxCollider2D:
   m_ObjectHideFlags: 0
