@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e439e747-cdfe-4ae6-aa23-eaff5f80ee83" name="Default Changelist" comment="" />
+    <list default="true" id="743d87fc-942d-4549-a021-22346d97ba60" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayerMode/PlayerMovementTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Tests/EditMode/Tests/PlayerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayerMode/PlayerMovementTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/EditMode/PlayerHealthTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/Tests/PlayerTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/PlayerHealthTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Tests/PlayerMode/PlayerMovementTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/PlayerMode/PlayerMovementTest.cs" />
     </changedPaths>
   </component>
-  <component name="ProjectId" id="2cMle4NdFl2tFxKoXxAo6S56Xcn" />
+  <component name="ProjectId" id="2cSEidQ1cyjfEltzsbCdep8SrYZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,13 +33,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e439e747-cdfe-4ae6-aa23-eaff5f80ee83" name="Default Changelist" comment="" />
-      <created>1707929431818</created>
+      <changelist id="743d87fc-942d-4549-a021-22346d97ba60" name="Default Changelist" comment="" />
+      <created>1708096711361</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707929431818</updated>
-      <workItem from="1707929435714" duration="2450000" />
-      <workItem from="1707932785718" duration="433000" />
+      <updated>1708096711361</updated>
+      <workItem from="1708096713931" duration="4687000" />
     </task>
     <servers />
   </component>

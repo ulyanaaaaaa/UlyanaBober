@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 24
-  productGUID: 0c13b70c19ad3d4498e40836891986cb
+  productGUID: a685866e56b9462478b92d62d732f63e
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -812,10 +812,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 8200f0e2-d87c-44c7-b601-268f96295565
+  cloudProjectId: 4e266843-4876-4b44-b0ec-e926a0e09e97
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Lesson32
+  projectName: Lesson32 2024-02-16_18-13-40
   organizationId: ulianabober
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
