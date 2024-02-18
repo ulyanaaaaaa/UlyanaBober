@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Person.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/EditMode/PersonHitTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -16,6 +17,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Battle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/PersonHitTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Person.cs" />
     </changedPaths>
   </component>
@@ -48,6 +50,8 @@
       <workItem from="1707933527444" duration="3900000" />
       <workItem from="1707941565622" duration="2752000" />
       <workItem from="1708011112389" duration="803000" />
+      <workItem from="1708102956803" duration="1829000" />
+      <workItem from="1708282606826" duration="2676000" />
     </task>
     <servers />
   </component>

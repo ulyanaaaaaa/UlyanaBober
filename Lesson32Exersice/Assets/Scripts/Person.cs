@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Person : MonoBehaviour
 {
-    [SerializeField] private float _health;
+    [field: SerializeField] public float Health { get; private set;}
     [SerializeField] private float _delay;
     [SerializeField] private float _maxHealth;
     [SerializeField] private float _damage;
-    [SerializeField] private Person _person;
+    [SerializeField] public Person EnemyPerson;
     private Vector3 _position;
 
     private void Awake()
@@ -17,29 +17,43 @@ public class Person : MonoBehaviour
 
     private IEnumerator HitTick()
     {
-        Hit();
-        yield return new WaitForSeconds(_delay);
-    }
-
-    private void Hit()
-    {
-        _person._health -= _damage;
-        if (_person._health <= 0)
+        while (true)
         {
-            Die();
-            _person = CreateNewPerson();
+            if (EnemyPerson)
+                Hit(_damage);
+            
+            yield return new WaitForSeconds(_delay);
         }
     }
 
-    private void Die()
+    public void Hit(float damage)
     {
-        _position = _person.transform.position;
-        Destroy(_person.gameObject);
+        EnemyPerson.Health -= damage;
+        if (EnemyPerson.Health <= 0)
+        {
+            Health = _maxHealth;
+            Die();
+            StartCoroutine(RespawnTick());
+            Debug.Log("New enemy!");
+        }
+    }
+
+    private IEnumerator RespawnTick()
+    {
+        yield return new WaitForSeconds(1);
+        Person newPerson = CreateNewPerson();
+        newPerson.EnemyPerson = this;
+        EnemyPerson = newPerson;
+    }
+
+    public void Die()
+    {
+        _position = EnemyPerson.transform.position;
+        Destroy(EnemyPerson.gameObject);
     }
 
     private Person CreateNewPerson()
     {
-        _health = _maxHealth;
-        return Instantiate(_person, _position, Quaternion.identity);
+        return Instantiate(Resources.Load<Person>("RedPerson"), _position, Quaternion.identity);
     }
 }
