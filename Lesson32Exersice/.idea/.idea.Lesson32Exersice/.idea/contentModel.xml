@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Materials" t="Include" />
+        <e p="Resources" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Person.cs" t="Include" />
@@ -17,12 +18,17 @@
             <e p="EditMode.asmdef" t="Include" />
             <e p="PersonHitTest.cs" t="Include" />
           </e>
+          <e p="PlayMode" t="Include">
+            <e p="PersonHitTests.cs" t="Include" />
+            <e p="PlayMode.asmdef" t="Include" />
+          </e>
         </e>
       </e>
       <e p="EditMode.csproj" t="IncludeRecursive" />
       <e p="Lesson32Exersice.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="PlayMode.csproj" t="IncludeRecursive" />
       <e p="Scripts.csproj" t="IncludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
     </e>

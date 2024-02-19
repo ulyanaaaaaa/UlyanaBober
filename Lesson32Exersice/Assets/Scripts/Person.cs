@@ -34,7 +34,6 @@ public class Person : MonoBehaviour
             Health = _maxHealth;
             Die();
             StartCoroutine(RespawnTick());
-            Debug.Log("New enemy!");
         }
     }
 
@@ -46,7 +45,7 @@ public class Person : MonoBehaviour
         EnemyPerson = newPerson;
     }
 
-    public void Die()
+    private void Die()
     {
         _position = EnemyPerson.transform.position;
         Destroy(EnemyPerson.gameObject);

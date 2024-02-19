@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode/PersonHitTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Person.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/EditMode/PersonHitTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -18,6 +19,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Battle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/PersonHitTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PersonHitTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Person.cs" />
     </changedPaths>
   </component>
@@ -51,7 +53,8 @@
       <workItem from="1707941565622" duration="2752000" />
       <workItem from="1708011112389" duration="803000" />
       <workItem from="1708102956803" duration="1829000" />
-      <workItem from="1708282606826" duration="2676000" />
+      <workItem from="1708282606826" duration="4088000" />
+      <workItem from="1708337027732" duration="1667000" />
     </task>
     <servers />
   </component>
