@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6900650771856013949}
   - component: {fileID: 4236156915786482415}
   - component: {fileID: 3293696478101670887}
-  - component: {fileID: 818385982188340680}
+  - component: {fileID: 1538480902539001550}
   m_Layer: 0
-  m_Name: Ball
+  m_Name: BigBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &818385982188340680
+--- !u!114 &1538480902539001550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2640581252012572458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16407d50edf7c3842bf2479120be1987, type: 3}
+  m_Script: {fileID: 11500000, guid: e3486176d46bec547957afbe3fba61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   <Damage>k__BackingField: 50

@@ -2,11 +2,10 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 
-public class Ball : MonoBehaviour
-{
-    private Rigidbody _rigidbody;
+public class Ball : MonoBehaviour {
     [field: SerializeField] public float Damage { get; private set; }
-
+    private Rigidbody _rigidbody;
+    
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();

@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour, IHit
    
    private void OnCollisionEnter(Collision collision)
    {
-      if (collision.gameObject.TryGetComponent(out Ball ball))
+      if (collision.gameObject.TryGetComponent(out BigBall ball))
       {
          _health -= ball.Damage;
       }

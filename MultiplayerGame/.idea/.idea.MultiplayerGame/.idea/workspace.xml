@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/BigBall.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/IEnemy.cs" />
@@ -22,13 +25,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BigEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FastEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Gun.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/SmallGun.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/BigGun.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BigEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/FastEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Balls/SmallBall.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BigBall.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Gun.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2cb5se2PN6LdbFR4chEvlKl3pq9" />
@@ -57,6 +65,7 @@
       <updated>1708367654390</updated>
       <workItem from="1708367660416" duration="838000" />
       <workItem from="1708368585804" duration="13731000" />
+      <workItem from="1708421738009" duration="3002000" />
     </task>
     <servers />
   </component>

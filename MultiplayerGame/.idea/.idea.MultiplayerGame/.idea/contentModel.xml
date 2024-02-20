@@ -6,10 +6,13 @@
     <e p="D:\UlyanaBober\MultiplayerGame" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Materials" t="Include" />
+        <e p="Resources" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Balls" t="Include">
             <e p="Ball.cs" t="Include" />
+            <e p="BigBall.cs" t="Include" />
             <e p="SmallBall.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
