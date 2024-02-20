@@ -7,7 +7,7 @@ public class BigGun : Gun
         if (_canShoot)
         {
             _canShoot = false;
-            Ball ball = Instantiate(Resources.Load<Ball>("Ball"), _spawnPoint.position, Quaternion.identity);
+            Ball ball = Instantiate(Resources.Load<BigBall>("BigBall"), _spawnPoint.position, Quaternion.identity);
             ball.Fly(_spawnPoint.transform.right, _force);
             _ammo--;
         }

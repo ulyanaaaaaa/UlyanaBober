@@ -10,8 +10,8 @@ public class Enemy : MonoBehaviour, IHit
    [SerializeField] private protected float _force;
    [SerializeField] private protected float _speed;
    [SerializeField] private protected float _delay;
+   [SerializeField] private Player _player;
    private Rigidbody _rigidbody;
-   private Player _player;
    private Coroutine _hitTick;
 
    private void Awake()
