@@ -3,15 +3,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _health;
+    [field: SerializeField] public float Damage { get; private set; }
     [SerializeField] private Transform _spawnPosition;
     private IShoot currentGun;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
             currentGun = Instantiate(Resources.Load<Gun>("Gun"), _spawnPosition.position, Quaternion.identity);
-        }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
             currentGun = Instantiate(Resources.Load<BigGun>("BigGun"), _spawnPosition.position, Quaternion.identity);

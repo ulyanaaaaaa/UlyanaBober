@@ -18,6 +18,7 @@ public class Gun : MonoBehaviour, IShoot
             Ball ball = Instantiate(Resources.Load<BigBall>("BigBall"), _spawnPoint.position, Quaternion.identity);
             ball.Fly(_spawnPoint.transform.right, _force);
             _ammo--;
+            _canShoot = true;
         }
     }
 
@@ -32,5 +33,10 @@ public class Gun : MonoBehaviour, IShoot
         yield return new WaitForSeconds(delay);
         _ammo = _maxAmmo;
         _canShoot = true;
+    }
+
+    public void Destroy()
+    {
+        Destroy(gameObject);
     }
 }

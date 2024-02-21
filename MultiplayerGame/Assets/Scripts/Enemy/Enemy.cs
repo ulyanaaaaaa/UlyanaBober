@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 
-public class Enemy : MonoBehaviour, IHit
+public class Enemy : MonoBehaviour, IHit, ISetup
 {
    [SerializeField] private protected float _health;
    [SerializeField] private protected float _force;

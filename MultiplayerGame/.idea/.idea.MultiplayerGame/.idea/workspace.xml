@@ -8,7 +8,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Box/ISetup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/BigBall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -26,17 +28,22 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/BigEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FastEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/BigEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/FastEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Balls/SmallBall.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BigBall.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Gun.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/BigGun.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Guns/SmallGun.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Guns/Gun.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Box.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Box/BoxSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Box/ISetup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Box/BoxFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Box/Box.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2cb5se2PN6LdbFR4chEvlKl3pq9" />
@@ -66,6 +73,9 @@
       <workItem from="1708367660416" duration="838000" />
       <workItem from="1708368585804" duration="13731000" />
       <workItem from="1708421738009" duration="3406000" />
+      <workItem from="1708503285654" duration="527000" />
+      <workItem from="1708509430969" duration="2084000" />
+      <workItem from="1708511911615" duration="1182000" />
     </task>
     <servers />
   </component>

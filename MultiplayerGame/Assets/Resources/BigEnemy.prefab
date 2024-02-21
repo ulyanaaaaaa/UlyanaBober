@@ -131,4 +131,5 @@ MonoBehaviour:
   _health: 50
   _force: 20
   _speed: 5
-  _delay: 0.2
+  _delay: 3
+  _player: {fileID: 0}

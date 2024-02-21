@@ -10,6 +10,7 @@ public class SmallGun : Gun
             Ball ball = Instantiate(Resources.Load<BigBall>("BigBall"), _spawnPoint.position, Quaternion.identity);
             ball.Fly(_spawnPoint.transform.right, _force);
             _ammo--;
+            _canShoot = true;
         }
     }
     
