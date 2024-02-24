@@ -6,6 +6,4 @@ public class WinWindow : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-    
-    
 }

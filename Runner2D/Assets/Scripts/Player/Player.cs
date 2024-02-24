@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         {
             Coins.Add(coin);
             _coinsCounter?.OnAddCoin();
-            coin?.OnDestroy();
+            coin?.OnDestroy();  
         }
     }
 
@@ -39,7 +39,9 @@ public class Player : MonoBehaviour
 
         if (_health <= 0)
         {
-            OnDie?.Invoke();
+            OnDie.Invoke();
+            //_failWindow.gameObject.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }

@@ -63,7 +63,6 @@ public class EntryPoint : MonoBehaviour
     {
         
         PlayerCreated = Instantiate(_player, _playerStartPoint.position, Quaternion.identity);
-        Debug.Log("sss");
         PlayerCreated.GetComponent<PlayerHealth>().Setup(_bonusCreated);
     }
 
