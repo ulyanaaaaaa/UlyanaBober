@@ -11,6 +11,7 @@
           <e p="Prefabs" t="Include" />
           <e p="Sprites" t="Include" />
         </e>
+        <e p="Audio" t="Include" />
         <e p="Brutal 2D Adventure Mega Pack" t="Include">
           <e p="Brutal 2D Adventure Jungle Pack" t="Include">
             <e p="day" t="Include">
@@ -44,7 +45,6 @@
             <e p="CoinsCounter.cs" t="Include" />
             <e p="EntryPoint.cs" t="Include" />
             <e p="FailWindow.cs" t="Include" />
-            <e p="WinWindow.cs" t="Include" />
           </e>
         </e>
         <e p="Sprites" t="Include" />

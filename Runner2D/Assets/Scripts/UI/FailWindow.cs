@@ -13,23 +13,18 @@ public class FailWindow : MonoBehaviour
         _window.SetActive(false);
     }
 
-    private void Open()
-    {
-        Debug.Log("Open");
-        _window.SetActive(true);
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
-        StopAllCoroutines();
-    }
-
     public void Setup(Player player)
     {
-        Debug.Log("Setup");
-        player.OnDie += Open; 
+        player.OnDie += Open;
     }
 
-    private void Restart()
+    public void Restart()
     {
         SceneManager.LoadScene("SampleScene");
+    }
+    
+    private void Open()
+    {
+        _window.SetActive(true);
     }
 }

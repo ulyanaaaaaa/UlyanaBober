@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerShoot))]
@@ -7,13 +6,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public List<Coin> Coins;
+    public Action OnDie;
+    
+    private int _coins;
     private CoinsCounter _coinsCounter;
     private FailWindow _failWindow;
     private float _health = 100f;
-
-    public Action OnDie;
-
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Enemy enemy))
@@ -21,8 +20,8 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.TryGetComponent(out Coin coin))
         {
-            Coins.Add(coin);
-            _coinsCounter?.OnAddCoin();
+            _coins++;
+            _coinsCounter.AddCoin(_coins);
             coin?.OnDestroy();  
         }
     }
@@ -40,7 +39,6 @@ public class Player : MonoBehaviour
         if (_health <= 0)
         {
             OnDie.Invoke();
-            //_failWindow.gameObject.SetActive(true);
             Destroy(gameObject);
         }
     }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField] private float _force;
-    [SerializeField] public float Damage;
+    [field: SerializeField] public float Damage { get; private set; }
     
     private void Update()
     {
@@ -12,10 +12,8 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("1");
         if (collision.gameObject.TryGetComponent(out Enemy enemy))
         {
-            Debug.Log("2");
             Destroy(gameObject);
         }
     }

@@ -128,9 +128,8 @@ MonoBehaviour:
   _health: 20
   Damage: 100
   _force: 15
-  _speed: 5
+  _speed: 10
   _delay: 5
-  _player: {fileID: 0}
 --- !u!50 &-216358319701598784
 Rigidbody2D:
   serializedVersion: 4

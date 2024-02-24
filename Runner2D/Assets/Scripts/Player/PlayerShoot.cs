@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
+    private AudioSource _audio;
+
+    private void Awake()
+    {
+        _audio = GetComponent<AudioSource>();
+    }
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
             Shoot();
+            _audio.Play();
         }
     }
 

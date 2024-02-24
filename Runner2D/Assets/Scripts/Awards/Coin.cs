@@ -2,9 +2,9 @@ using System;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
-{
-    [SerializeField] private float _speed;
+{ 
     public Action OnDestroy;
+    [SerializeField] private float _speed;
 
     private void Awake()
     {

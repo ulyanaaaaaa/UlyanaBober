@@ -10,7 +10,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CoinsCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/FailWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/WinWindow.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -21,17 +20,20 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyFabrica.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFabrica.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Awards/CoinsSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Awards/CoinsFabrica.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Awards/Coin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CoinsCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/WinWindow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerShoot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFabrica.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/KilledEnemiesCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/EntryPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Awards/Coin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CoinsCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/FailWindow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2cgg7PbUkH56hWtVnNCJnD7O9iB" />
@@ -61,7 +63,8 @@
       <workItem from="1708599743052" duration="2000" />
       <workItem from="1708675048421" duration="1882000" />
       <workItem from="1708719908310" duration="11290000" />
-      <workItem from="1708769161090" duration="2678000" />
+      <workItem from="1708769161090" duration="3115000" />
+      <workItem from="1708772647587" duration="10536000" />
     </task>
     <servers />
   </component>
