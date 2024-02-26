@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Ulyana\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Ulyana\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Lesson34.-1556877052.00" t="ExcludeRecursive" />
+    <e p="D:\UlyanaBober\Lesson34" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scenes" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Barrier.cs" t="Include" />
+          <e p="BarriersFabrica.cs" t="Include" />
+          <e p="BarriersSpawner.cs" t="Include" />
+          <e p="EntryPoint.cs" t="Include" />
+          <e p="Ground.cs" t="Include" />
+          <e p="HitBarrier.cs" t="Include" />
+          <e p="JumpBarrier.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Lesson34.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
