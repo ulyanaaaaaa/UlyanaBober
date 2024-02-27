@@ -1,71 +1,118 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
-    [SerializeField] private BarriersFabrica _barriers;
-    [SerializeField] private int _maxHealth = 3;
+    public Action OnDie;
+
+    [SerializeField] private BarriersSpawner _spawner;
+    [SerializeField] private int _maxLife = 3;
     [SerializeField] private int _invisibleTime = 3;
     [SerializeField] private float _jumpForce;
-    private int _health;
+    [SerializeField] private float _nearbyDistance = 5f;
+
     private Rigidbody2D _rigidbody;
-    private bool _isInvisible;
-    private bool _isGround;
     private Coroutine _invisibleTick;
+    private LifeCounter _lifeCounter;
+    private bool _isInvisible;
+    [SerializeField] private bool _isJump;
+    public int _life;
+
+    public void Setup(LifeCounter lifeCounter, BarriersSpawner spawner)
+    {
+        _lifeCounter = lifeCounter;
+        _spawner = spawner;
+    }
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _life = _maxLife;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && _isGround)
+        if (Input.GetKeyDown(KeyCode.Space) && !_isJump)
         {
             Jump();
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            
+            DestroyNearestBarrier();
         }
     }
-    
+
     private void Jump()
     {
+        _isJump = true;
         _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Barrier barrier))
         {
+            barrier.OnDestroy?.Invoke();
             Hitten(barrier);
         }
 
-        _isGround = collision.gameObject.TryGetComponent(out Ground ground) ? true : false;
+        _isJump = collision.gameObject.TryGetComponent(out Ground ground)? false : true;
     }
-
+    
     private void Hitten(Barrier barrier)
     {
-        if (!_isInvisible)
+        if (_isInvisible)
+            return;
+
+        barrier.TakeDamage(this);
+        _lifeCounter.CurrentLife(_life);
+        _invisibleTick = StartCoroutine(InvisibleTick());
+
+        if (_life == 0)
         {
-            barrier.TakeDamage(_health);
-            if (_health == 0)
+            OnDie?.Invoke();
+        }
+    }
+
+    private void DestroyNearestBarrier()
+    {
+        Barrier nearestBarrier = FindNearestBarrier();
+
+        if (nearestBarrier != null)
+        {
+            float distance = Vector2.Distance(nearestBarrier.transform.position, transform.position);
+            
+            if (distance > _nearbyDistance) //problem
             {
-                _invisibleTick = StartCoroutine(InvisibleTick());
-                _health = _maxHealth;
+                nearestBarrier.OnDestroy?.Invoke();
             }
         }
     }
 
-    private void Hit()
+    private Barrier FindNearestBarrier()
     {
-        foreach (Barrier barrier in _barriers.Barriers)
+        if (_spawner.Barriers.Count == 0)
         {
-            
+            return null;
         }
+
+        Barrier nearestBarrier = _spawner.Barriers[0];
+
+        for (int i = 0; i < _spawner.Barriers.Count; i++)
+        {
+            float distance = Vector2.Distance(_spawner.Barriers[i].transform.position, transform.position);
+
+            if (distance < Vector2.Distance(nearestBarrier.transform.position, transform.position))
+            {
+                nearestBarrier = _spawner.Barriers[i];
+            }
+        }
+
+        return nearestBarrier;
     }
 
     private IEnumerator InvisibleTick()

@@ -8,18 +8,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/FailWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ground.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/BarriersSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HitBarrier.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/JumpBarrier.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Barrier.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BarriersFabrica.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BarriersSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/LifesCounter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/LifeCounter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/FailWindow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ground.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Barriers/BarriersSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Barriers/BarriersFabrica.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Barriers/Barrier.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2cusWgxlfKGAITBlAiexwFRU9xT" />
@@ -31,8 +39,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -47,6 +58,8 @@
       <updated>1708972835538</updated>
       <workItem from="1708972842592" duration="1367000" />
       <workItem from="1708980796051" duration="4461000" />
+      <workItem from="1709031167795" duration="9506000" />
+      <workItem from="1709054830541" duration="4613000" />
     </task>
     <servers />
   </component>
