@@ -21,9 +21,11 @@
             <e p="EntryPoint.cs" t="Include" />
           </e>
           <e p="Ground.cs" t="Include" />
+          <e p="GroundChacker.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="FailWindow.cs" t="Include" />
+            <e p="InvisibleTimer.cs" t="Include" />
             <e p="LifeCounter.cs" t="Include" />
           </e>
         </e>
