@@ -29,9 +29,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Barriers/Barrier.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Barriers/BarriersSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GroundChacker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/InvisibleTimer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2cusWgxlfKGAITBlAiexwFRU9xT" />
@@ -66,6 +66,7 @@
       <workItem from="1709054830541" duration="4613000" />
       <workItem from="1709064853735" duration="2853000" />
       <workItem from="1709125212491" duration="3266000" />
+      <workItem from="1709136205212" duration="330000" />
     </task>
     <servers />
   </component>

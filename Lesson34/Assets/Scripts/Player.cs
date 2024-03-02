@@ -51,7 +51,6 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        _chacker.IsGround = false;
         _rigidbody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
     }
 
