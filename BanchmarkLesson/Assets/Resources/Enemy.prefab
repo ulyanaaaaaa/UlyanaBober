@@ -178,7 +178,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _delay: 2
+  minX: 0
+  maxX: 0
+  _delay: 5
   _spawnBallPosition: {fileID: 3292990984297537417}
   <Damage>k__BackingField: 50
 --- !u!61 &-6454005362639140835

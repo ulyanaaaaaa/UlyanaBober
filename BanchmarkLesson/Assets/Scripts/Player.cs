@@ -9,6 +9,14 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerBomb _bomb;
     [SerializeField] private float minX, maxX;
     private Rigidbody2D _rigidbody;
+    private EnemyFactory _enemyFactory;
+
+    public bool IsTookBonus;
+
+    public void Setup(EnemyFactory enemyFactory)
+    {
+        _enemyFactory = enemyFactory;
+    }
 
     private void Awake()
     {
@@ -36,6 +44,16 @@ public class Player : MonoBehaviour
     {
         PlayerBomb ball = Resources.Load<PlayerBomb>("PlayerBomb");
         PlayerBomb newBall = Instantiate(ball, _spawnBallPosition.position, Quaternion.identity);
+    }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out Bonus bonus))
+        {
+            //bonus.gameObject.SetActive(false);
+            IsTookBonus = true;
+            bonus.Timer();
+        }
     }
 
     public void Die()
