@@ -9,15 +9,15 @@ public class Bonus : MonoBehaviour
     private Coroutine _slowlyEnemyTick;
     private Rigidbody2D _rigidbody;
     private Player _player;
+    
+    public void Setup(Player player)
+    {
+        _player = player;
+    }
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-    }
-
-    public void Setup(Player player)
-    {
-        _player = player;
     }
 
     private void Update()

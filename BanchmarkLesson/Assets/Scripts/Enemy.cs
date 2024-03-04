@@ -42,30 +42,7 @@ public class Enemy : MonoBehaviour
             _rigidbody.velocity = (Vector2.down + new Vector2(Random.Range(-3, 3), 0)) * _speed;
         }
     }
-
-    private void Shoot()
-    {
-        EnemyBomb ball = Resources.Load<EnemyBomb>("EnemyBomb");
-        EnemyBomb newBall = Instantiate(ball, _spawnBallPosition.position, Quaternion.identity);
-    }
-
-    private IEnumerator ShootTick()
-    {
-        while (true)
-        {
-            Shoot();
-            yield return new WaitForSeconds(_delay);
-        }
-    }
     
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.TryGetComponent(out Ground ground))
-        {
-            _player.Die();
-        }
-    }
-
     public void Slowdown()
     {
         _speed /= 2;
@@ -79,10 +56,33 @@ public class Enemy : MonoBehaviour
         
         Destroy(gameObject);
     }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out Ground ground))
+        {
+            _player.Die();
+        }
+    }
 
+    private void Shoot()
+    {
+        EnemyBomb ball = Resources.Load<EnemyBomb>("EnemyBomb");
+        EnemyBomb newBall = Instantiate(ball, _spawnBallPosition.position, Quaternion.identity);
+    }
+    
     private void BonusSpawn()
     {
         Bonus bonus = Resources.Load<Bonus>("Bonus");
         Instantiate(bonus, transform.position, Quaternion.identity).Setup(_player);
+    }
+
+    private IEnumerator ShootTick()
+    {
+        while (true)
+        {
+            Shoot();
+            yield return new WaitForSeconds(_delay);
+        }
     }
 }

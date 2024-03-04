@@ -39,13 +39,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             Shoot();
     }
-
-    private void Shoot()
-    {
-        PlayerBomb ball = Resources.Load<PlayerBomb>("PlayerBomb");
-        PlayerBomb newBall = Instantiate(ball, _spawnBallPosition.position, Quaternion.identity);
-    }
     
+    public void Die()
+    {
+        Destroy(gameObject);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Bonus bonus))
@@ -54,9 +53,10 @@ public class Player : MonoBehaviour
             bonus.Timer();
         }
     }
-
-    public void Die()
+    
+    private void Shoot()
     {
-        Destroy(gameObject);
+        PlayerBomb ball = Resources.Load<PlayerBomb>("PlayerBomb");
+        PlayerBomb newBall = Instantiate(ball, _spawnBallPosition.position, Quaternion.identity);
     }
 }
