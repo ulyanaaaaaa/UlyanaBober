@@ -73,7 +73,10 @@ public class Enemy : MonoBehaviour
     
     public void Die()
     {
-        BonusSpawn();
+        int random = Random.Range(0, 100);
+        if (random > 75)
+            BonusSpawn();
+        
         Destroy(gameObject);
     }
 

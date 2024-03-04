@@ -50,7 +50,6 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Bonus bonus))
         {
-            //bonus.gameObject.SetActive(false);
             IsTookBonus = true;
             bonus.Timer();
         }

@@ -22,5 +22,10 @@ public class EnemyBomb : MonoBehaviour
         {
             player.Die();
         }
+        
+        if (collision.gameObject.TryGetComponent(out Ground ground))
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -1082,6 +1082,7 @@
           <e p="EnemySpawner.cs" t="Include" />
           <e p="EntryPoint.cs" t="Include" />
           <e p="ExplosionFinish.cs" t="Include" />
+          <e p="FailWindow.cs" t="Include" />
           <e p="Ground.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerBomb.cs" t="Include" />

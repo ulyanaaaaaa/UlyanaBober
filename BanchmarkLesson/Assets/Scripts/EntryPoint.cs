@@ -3,7 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyFactory))]
 public class EntryPoint : MonoBehaviour
 {
-    [SerializeField] private Canvas _canvas;
     [SerializeField] private Transform _playerStartPoint;
     private Player _player;
     private EnemyFactory _enemyFactory;
