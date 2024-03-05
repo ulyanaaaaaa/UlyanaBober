@@ -13,6 +13,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeabordInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FailWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShopSpeedItemViewer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SmallCloud.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FuelFabrica.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fuel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,17 +27,21 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/SmallCloud.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FailWindow.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FuelBar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Money.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CloudSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fuel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyFabrica.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CloudFabrica.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FuelSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FuelFabrica.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/KeabordInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Money.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ShopItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ShopItemViewer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ShopSpeedItemViewer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ShopSpeedItem.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2dEimv6QBQ1gjJRFkq4hcu6Q7sT" />
@@ -67,6 +72,7 @@
       <workItem from="1709636921610" duration="5240000" />
       <workItem from="1709643654651" duration="98000" />
       <workItem from="1709656664245" duration="9479000" />
+      <workItem from="1709669815641" duration="4916000" />
     </task>
     <servers />
   </component>

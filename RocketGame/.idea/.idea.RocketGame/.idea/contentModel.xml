@@ -86,6 +86,8 @@
           <e p="MoneyFabrica.cs" t="Include" />
           <e p="MoneySpawner.cs" t="Include" />
           <e p="Rocket.cs" t="Include" />
+          <e p="ShopSpeedItem.cs" t="Include" />
+          <e p="ShopSpeedItemViewer.cs" t="Include" />
           <e p="SmallCloud.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

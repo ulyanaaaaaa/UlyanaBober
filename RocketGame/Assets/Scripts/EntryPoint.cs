@@ -17,6 +17,8 @@ public class EntryPoint : MonoBehaviour
     private FailWindow _failWindowCreated;
     private FuelBar _fuelBar;
     private FuelBar _fuelBarCreated;
+    private ShopSpeedItem _shopSpeedItem;
+    private ShopSpeedItem _shopSpeedItemCreated;
 
     private void Awake()
     {
@@ -27,6 +29,7 @@ public class EntryPoint : MonoBehaviour
         _moneyFabrica = Resources.Load<MoneyFabrica>("MoneyFabrica");
         _cloudFabrica = Resources.Load<CloudFabrica>("CloudFabrica");
         _fuelFabrica = Resources.Load<FuelFabrica>("FuelFabrica");
+        _shopSpeedItem = Resources.Load<ShopSpeedItem>("ItemSpeed");
         CreateRocket();
         CreateUI();
         _input.OnPlay += CreateSpawners;
@@ -47,6 +50,14 @@ public class EntryPoint : MonoBehaviour
             _canvas.transform);
         _failWindowCreated.GetComponent<RectTransform>().localPosition = Vector3.zero;
         _failWindowCreated.Setup(_rocketCreated);
+        
+        _shopSpeedItemCreated = Instantiate(_shopSpeedItem, 
+            _shopSpeedItem.GetComponent<RectTransform>().localPosition, 
+            Quaternion.identity, 
+            _canvas.transform);
+        _shopSpeedItemCreated.Setup(_rocketCreated);
+        _shopSpeedItemCreated.GetComponent<ShopSpeedItemViewer>().Setup(_rocketCreated);
+        _shopSpeedItemCreated.GetComponent<RectTransform>().localPosition = _shopSpeedItem.GetComponent<RectTransform>().localPosition;
     }
 
     private void CreateRocket()

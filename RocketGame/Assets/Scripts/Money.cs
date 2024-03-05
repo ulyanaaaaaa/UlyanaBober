@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Money : MonoBehaviour
 {
-    [field: SerializeField] public int Resources { get; private set; }
+    public int Resources;
 
     private void Start()
     {

@@ -9,19 +9,16 @@ public class Rocket : MonoBehaviour
     public Action OnDie;
     
     [field: SerializeField] public float Fuel { get; private set; } = 100;
-    
-    [SerializeField] private List<int> _wallet;
-    
     [SerializeField] private float _speed;
     private Rigidbody _rigidbody;
     [SerializeField] private KeabordInput _input;
     private Coroutine _fuelTick;
-    [SerializeField] private int _wholeMoney;
+    [field: SerializeField] public int Wallet { get; private set; }
     private bool _isPlay;
 
     private void Start()
     {
-        LoadMoney();
+        Load();
         _rigidbody = GetComponent<Rigidbody>();
         _input.OnLeftClicked += TurnLeft;
         _input.OnRightClicked += TurnRight;
@@ -59,7 +56,7 @@ public class Rocket : MonoBehaviour
     {
         if (collider.gameObject.TryGetComponent(out Money money))
         {
-            _wallet.Add(money.Resources);
+            Wallet += money.Resources;
         }
         
         if (collider.gameObject.TryGetComponent(out Fuel fuel))
@@ -68,18 +65,48 @@ public class Rocket : MonoBehaviour
         }
     }
 
-    private void SaveMoney()
+    private void Save()
     {
-        foreach (int count in _wallet)
-            _wholeMoney += count;
-        
-        PlayerPrefs.SetInt("Wallet", _wholeMoney);
+        PlayerPrefs.SetInt("Wallet", Wallet);
+        PlayerPrefs.SetFloat("Speed", _speed);
     }
 
-    private void LoadMoney()
+    private void Load()
     {
         if (PlayerPrefs.HasKey("Wallet"))
-            _wholeMoney = PlayerPrefs.GetInt("Wallet", _wholeMoney);
+            Wallet = PlayerPrefs.GetInt("Wallet", Wallet);
+
+        if (PlayerPrefs.HasKey("Speed"))
+            _speed = PlayerPrefs.GetFloat("Speed", _speed);
+    }
+    
+    private void RemoveValue(int amount)
+    {
+        if (amount < 0)
+            throw new ArgumentException("Value must be positive!");
+        
+        Wallet-= amount;
+    }
+
+    public void AddSpeed(float speed)
+    {
+        _speed += speed;
+    }
+
+    public bool TrySpend(int amount)
+    {
+        if (amount < 0)
+            throw new ArgumentException("Value must be positive!");
+
+        if (amount > Wallet)
+        {
+            return false;
+        }
+        else
+        {
+            RemoveValue(amount);
+            return true;
+        }
     }
 
     private IEnumerator FuelTick()
@@ -91,7 +118,7 @@ public class Rocket : MonoBehaviour
 
             if (Fuel == 0)
             {
-                SaveMoney();
+                Save();
                 OnDie?.Invoke();
                 break;
             }
