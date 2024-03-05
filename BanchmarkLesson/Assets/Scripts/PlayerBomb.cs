@@ -7,7 +7,7 @@ public class PlayerBomb : MonoBehaviour
     [SerializeField] private float _force;
     private Rigidbody2D _rigidbody;
     private Animator _animator;
-    [SerializeField] private Animator _cameraAnimator;
+    private Animator _cameraAnimator;
 
     private void Awake()
     {

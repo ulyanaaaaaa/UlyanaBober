@@ -18,7 +18,6 @@ public class EntryPoint : MonoBehaviour
     private void CreatePlayer()
     {
         _playerCreated = Instantiate(_player, _playerStartPoint.position, Quaternion.identity);
-        _playerCreated.Setup(_enemyFactory);
         _enemyFactory.Setup(_playerCreated);
     }
 }

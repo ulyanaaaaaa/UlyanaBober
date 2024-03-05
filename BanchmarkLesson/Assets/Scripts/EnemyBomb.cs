@@ -18,11 +18,6 @@ public class EnemyBomb : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out Player player))
-        {
-            player.Die();
-        }
-        
         if (collision.gameObject.TryGetComponent(out Ground ground))
         {
             Destroy(gameObject);

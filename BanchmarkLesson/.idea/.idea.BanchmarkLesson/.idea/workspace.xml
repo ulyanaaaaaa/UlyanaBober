@@ -18,13 +18,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Ball.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ExplosionFinish.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bonus.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBomb.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBomb.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBomb.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2d0SDIagGHo8fmVzAYemfXf3D7d" />
@@ -61,7 +61,7 @@
       <workItem from="1709490444527" duration="570000" />
       <workItem from="1709557857996" duration="620000" />
       <workItem from="1709558687743" duration="1660000" />
-      <workItem from="1709568013979" duration="600000" />
+      <workItem from="1709568013979" duration="3280000" />
     </task>
     <servers />
   </component>

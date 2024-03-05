@@ -1072,6 +1072,7 @@
             </e>
           </e>
         </e>
+        <e p="nbvc.cs" t="Include" />
         <e p="Resources" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">

@@ -9,14 +9,8 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerBomb _bomb;
     [SerializeField] private float minX, maxX;
     private Rigidbody2D _rigidbody;
-    private EnemyFactory _enemyFactory;
 
     public bool IsTookBonus;
-
-    public void Setup(EnemyFactory enemyFactory)
-    {
-        _enemyFactory = enemyFactory;
-    }
 
     private void Awake()
     {
@@ -51,6 +45,11 @@ public class Player : MonoBehaviour
         {
             IsTookBonus = true;
             bonus.Timer();
+        }
+        
+        if (collision.gameObject.TryGetComponent(out EnemyBomb bomb))
+        {
+            Die();
         }
     }
     

@@ -42,21 +42,20 @@ public class Enemy : MonoBehaviour
             _rigidbody.velocity = (Vector2.down + new Vector2(Random.Range(-3, 3), 0)) * _speed;
         }
     }
-    
-    public void Slowdown()
-    {
-        _speed /= 2;
-    }
-    
+
     public void Die()
+    {
+        CreateBonusByRandom();
+        Destroy(gameObject);
+    }
+
+    private void CreateBonusByRandom()
     {
         int random = Random.Range(0, 100);
         if (random > 75)
             BonusSpawn();
-        
-        Destroy(gameObject);
     }
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Ground ground))
@@ -67,8 +66,8 @@ public class Enemy : MonoBehaviour
 
     private void Shoot()
     {
-        EnemyBomb ball = Resources.Load<EnemyBomb>("EnemyBomb");
-        EnemyBomb newBall = Instantiate(ball, _spawnBallPosition.position, Quaternion.identity);
+        EnemyBomb bomb = Resources.Load<EnemyBomb>("EnemyBomb");
+        EnemyBomb newBall = Instantiate(bomb, _spawnBallPosition.position, Quaternion.identity);
     }
     
     private void BonusSpawn()

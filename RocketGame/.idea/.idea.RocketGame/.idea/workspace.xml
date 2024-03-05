@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74a1fa46-5457-4351-88a1-04e228dd9212" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyFabrica.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FuelBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeabordInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FailWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SmallCloud.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FuelFabrica.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fuel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/IInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BigCloud.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Cloud.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SmallCloud.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FailWindow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FuelBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Money.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CloudSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneySpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fuel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyFabrica.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CloudFabrica.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FuelSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FuelFabrica.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/KeabordInput.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="2dEimv6QBQ1gjJRFkq4hcu6Q7sT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74a1fa46-5457-4351-88a1-04e228dd9212" name="Default Changelist" comment="" />
+      <created>1709579800896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709579800896</updated>
+      <workItem from="1709579802507" duration="12533000" />
+      <workItem from="1709636921610" duration="5240000" />
+      <workItem from="1709643654651" duration="98000" />
+      <workItem from="1709656664245" duration="9479000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
