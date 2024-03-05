@@ -70,25 +70,46 @@
         <e p="Resources" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="BigCloud.cs" t="Include" />
-          <e p="Cloud.cs" t="Include" />
-          <e p="CloudFabrica.cs" t="Include" />
-          <e p="CloudSpawner.cs" t="Include" />
-          <e p="EntryPoint.cs" t="Include" />
-          <e p="FailWindow.cs" t="Include" />
-          <e p="Fuel.cs" t="Include" />
-          <e p="FuelBar.cs" t="Include" />
-          <e p="FuelFabrica.cs" t="Include" />
-          <e p="FuelSpawner.cs" t="Include" />
-          <e p="Ground.cs" t="Include" />
-          <e p="KeabordInput.cs" t="Include" />
-          <e p="Money.cs" t="Include" />
-          <e p="MoneyFabrica.cs" t="Include" />
-          <e p="MoneySpawner.cs" t="Include" />
-          <e p="Rocket.cs" t="Include" />
-          <e p="ShopSpeedItem.cs" t="Include" />
-          <e p="ShopSpeedItemViewer.cs" t="Include" />
-          <e p="SmallCloud.cs" t="Include" />
+          <e p="Clouds" t="Include">
+            <e p="BigCloud.cs" t="Include" />
+            <e p="Cloud.cs" t="Include" />
+            <e p="CloudFabrica.cs" t="Include" />
+            <e p="CloudSpawner.cs" t="Include" />
+            <e p="SmallCloud.cs" t="Include" />
+          </e>
+          <e p="Core" t="Include">
+            <e p="EntryPoint.cs" t="Include" />
+            <e p="KeabordInput.cs" t="Include" />
+          </e>
+          <e p="Enviroment" t="Include">
+            <e p="Ground.cs" t="Include" />
+            <e p="Rocket.cs" t="Include" />
+          </e>
+          <e p="Fuel" t="Include">
+            <e p="Fuel.cs" t="Include" />
+            <e p="FuelBar.cs" t="Include" />
+            <e p="FuelFabrica.cs" t="Include" />
+            <e p="FuelSpawner.cs" t="Include" />
+          </e>
+          <e p="Money" t="Include">
+            <e p="Money.cs" t="Include" />
+            <e p="MoneyCounter.cs" t="Include" />
+            <e p="MoneyFabrica.cs" t="Include" />
+            <e p="MoneySpawner.cs" t="Include" />
+          </e>
+          <e p="Shop" t="Include">
+            <e p="Fuel" t="Include">
+              <e p="ShopFuelItem.cs" t="Include" />
+              <e p="ShopFuelItemViewer.cs" t="Include" />
+            </e>
+            <e p="Speed" t="Include">
+              <e p="ShopSpeedItem.cs" t="Include" />
+              <e p="ShopSpeedItemViewer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="FailWindow.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Documentation" t="Include" />

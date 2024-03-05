@@ -7,18 +7,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyFabrica.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FuelBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneySpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KeabordInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FailWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShopSpeedItemViewer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SmallCloud.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FuelFabrica.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Fuel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/IInput.cs" />
@@ -38,10 +26,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Money.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShopItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShopItemViewer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShopSpeedItemViewer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ShopFuelItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ShopFuelItemViewer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShopSpeedItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fuel/Fuel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/Rocket.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2dEimv6QBQ1gjJRFkq4hcu6Q7sT" />
@@ -72,7 +65,8 @@
       <workItem from="1709636921610" duration="5240000" />
       <workItem from="1709643654651" duration="98000" />
       <workItem from="1709656664245" duration="9479000" />
-      <workItem from="1709669815641" duration="4916000" />
+      <workItem from="1709669815641" duration="7915000" />
+      <workItem from="1709678593274" duration="56000" />
     </task>
     <servers />
   </component>
