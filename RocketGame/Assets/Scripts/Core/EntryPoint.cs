@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EntryPoint : MonoBehaviour
@@ -23,6 +24,10 @@ public class EntryPoint : MonoBehaviour
     private ShopFuelItem _shopFuelItemCreated;
     private MoneyCounter _moneyCounter;
     private MoneyCounter _moneyCounterCreated;
+    private InvisibleWall _invisibleWall;
+    private InvisibleWall _invisibleLeftWallCreated;
+    private InvisibleWall _invisibleRightWallCreated;
+    private Coroutine _createWallTick;
 
     private void Awake()
     {
@@ -36,12 +41,14 @@ public class EntryPoint : MonoBehaviour
         _shopSpeedItem = Resources.Load<ShopSpeedItem>("ItemSpeed");
         _shopFuelItem = Resources.Load<ShopFuelItem>("ItemFuel");
         _moneyCounter = Resources.Load<MoneyCounter>("MoneyCounter");
+        _invisibleWall = Resources.Load<InvisibleWall>("InvisibleWall");
         CreateMoneyCounter();
         CreateRocket();
         CreateUI();
         _input.OnPlay += CreateSpawners;
         _input.OnPlay += DisableShop;
         _input.OnPlay += FuelBarCreated;
+        _input.OnPlay += CreateInvisibleWall;
     }
 
     private void CreateUI()
@@ -80,6 +87,27 @@ public class EntryPoint : MonoBehaviour
             _canvas.transform);
         _moneyCounterCreated.GetComponent<RectTransform>().localPosition = 
             _moneyCounter.GetComponent<RectTransform>().localPosition;
+    }
+
+    private IEnumerator CreateWallTick()
+    {
+        while (true)
+        {
+            _invisibleLeftWallCreated = Instantiate(_invisibleWall,
+                new Vector3(-40, _rocketCreated.transform.position.y, _rocketCreated.transform.position.z), 
+                Quaternion.identity, 
+                _canvas.transform);
+            _invisibleRightWallCreated = Instantiate(_invisibleWall,
+                new Vector3(70, _rocketCreated.transform.position.y, _rocketCreated.transform.position.z), 
+                Quaternion.identity, 
+                _canvas.transform);
+            yield return new WaitForSeconds(1);
+        }
+    }
+
+    private void CreateInvisibleWall()
+    {
+        _createWallTick = StartCoroutine(CreateWallTick());
     }
 
     private void CreateRocket()

@@ -8,8 +8,8 @@ public class ShopFuelItemViewer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _price;
     [SerializeField] private TextMeshProUGUI _description;
-    [SerializeField] private Rocket _rocket;
     [SerializeField] private Image _background;
+    private Rocket _rocket;
     private ShopFuelItem _item;
 
     public void Setup(Rocket rocket)

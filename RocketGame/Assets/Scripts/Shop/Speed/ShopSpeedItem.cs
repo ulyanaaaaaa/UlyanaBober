@@ -8,7 +8,7 @@ public class ShopSpeedItem : MonoBehaviour
     public Action OnUpdate;
     [field: SerializeField] public float Speed { get; private set; }
     [field: SerializeField] public int Price { get; private set; }
-    [SerializeField] private Rocket _rocket;
+    private Rocket _rocket;
     private Button _button;
 
     public void Setup(Rocket rocket)

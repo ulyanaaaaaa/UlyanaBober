@@ -7,7 +7,7 @@ public class ShopFuelItem : MonoBehaviour
     public Action OnUpdate;
     [field: SerializeField] public float Fuel { get; private set; }
     [field: SerializeField] public int Price { get; private set; }
-    [SerializeField] private Rocket _rocket;
+    private Rocket _rocket;
     private Button _button;
 
     public void Setup(Rocket rocket)

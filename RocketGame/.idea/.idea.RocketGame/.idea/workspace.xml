@@ -34,7 +34,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fuel/Fuel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/EntryPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fuel/FuelBar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/Rocket.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/InvisibleWall.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/Ground.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Fuel/ShopFuelItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Fuel/ShopFuelItemViewer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Speed/ShopSpeedItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Speed/ShopSpeedItemViewer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2dEimv6QBQ1gjJRFkq4hcu6Q7sT" />
@@ -67,6 +75,7 @@
       <workItem from="1709656664245" duration="9479000" />
       <workItem from="1709669815641" duration="7915000" />
       <workItem from="1709678593274" duration="56000" />
+      <workItem from="1709717614556" duration="2284000" />
     </task>
     <servers />
   </component>

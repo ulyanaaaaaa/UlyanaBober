@@ -83,6 +83,7 @@
           </e>
           <e p="Enviroment" t="Include">
             <e p="Ground.cs" t="Include" />
+            <e p="InvisibleWall.cs" t="Include" />
             <e p="Rocket.cs" t="Include" />
           </e>
           <e p="Fuel" t="Include">

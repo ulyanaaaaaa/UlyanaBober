@@ -8,9 +8,9 @@ public class ShopSpeedItemViewer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _price;
     [SerializeField] private TextMeshProUGUI _description;
-    [SerializeField] private Rocket _rocket;
     [SerializeField] private Image _background;
     private ShopSpeedItem _item;
+    private Rocket _rocket;
 
     public void Setup(Rocket rocket)
     {
