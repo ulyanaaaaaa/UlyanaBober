@@ -79,12 +79,12 @@ public class Rocket : MonoBehaviour
     
     private void TurnLeft()
     {
-        _rigidbody.velocity = Vector3.left * _speed;
+        _rigidbody.velocity = (Vector3.left + Vector3.up) * _speed;
     }
     
     private void TurnRight()
     {
-        _rigidbody.velocity = Vector3.right * _speed;
+        _rigidbody.velocity = (Vector3.right + Vector3.up) * _speed;
     }
     
     private void Save()
@@ -121,11 +121,13 @@ public class Rocket : MonoBehaviour
         {
             Wallet += money.Resources;
             _moneyCounter.CurrentMoney(Wallet);
+            money.gameObject.SetActive(false);
         }
         
         if (collider.gameObject.TryGetComponent(out Fuel fuel))
         {
             Fuel += fuel.Count;
+            fuel.gameObject.SetActive(false);
         }
     }
 
