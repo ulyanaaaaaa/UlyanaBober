@@ -88,13 +88,11 @@
           </e>
           <e p="Fuel" t="Include">
             <e p="Fuel.cs" t="Include" />
-            <e p="FuelBar.cs" t="Include" />
             <e p="FuelFabrica.cs" t="Include" />
             <e p="FuelSpawner.cs" t="Include" />
           </e>
           <e p="Money" t="Include">
             <e p="Money.cs" t="Include" />
-            <e p="MoneyCounter.cs" t="Include" />
             <e p="MoneyFabrica.cs" t="Include" />
             <e p="MoneySpawner.cs" t="Include" />
           </e>
@@ -110,6 +108,9 @@
           </e>
           <e p="UI" t="Include">
             <e p="FailWindow.cs" t="Include" />
+            <e p="FuelBar.cs" t="Include" />
+            <e p="FuelCounter.cs" t="Include" />
+            <e p="MoneyCounter.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

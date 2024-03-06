@@ -16,12 +16,14 @@ public class Rocket : MonoBehaviour
     private KeabordInput _input;
     private Coroutine _fuelTick;
     private MoneyCounter _moneyCounter;
+    private FuelCounter _fuelCounter;
     private bool _isPlay;
     
-    public void Setup(KeabordInput input, MoneyCounter moneyCounter)
+    public void Setup(KeabordInput input, MoneyCounter moneyCounter, FuelCounter fuelCounter)
     {
         _input = input;
         _moneyCounter = moneyCounter;
+        _fuelCounter = fuelCounter;
     }
 
     private void Start()
@@ -29,6 +31,7 @@ public class Rocket : MonoBehaviour
         Load();
         Fuel = MaxFuel;
         _moneyCounter.CurrentMoney(Wallet);
+        _fuelCounter.CurrentMaxFuel(MaxFuel);
         _rigidbody = GetComponent<Rigidbody>();
         _input.OnPlay += StartPlay;
     }
@@ -47,6 +50,7 @@ public class Rocket : MonoBehaviour
     public void AddFuel(float fuel)
     {
         MaxFuel += fuel;
+        _fuelCounter.CurrentMaxFuel(MaxFuel);
     }
 
     public bool TrySpend(int amount)

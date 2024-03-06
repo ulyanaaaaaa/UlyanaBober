@@ -24,6 +24,8 @@ public class EntryPoint : MonoBehaviour
     private ShopFuelItem _shopFuelItemCreated;
     private MoneyCounter _moneyCounter;
     private MoneyCounter _moneyCounterCreated;
+    private FuelCounter _fuelCounter;
+    private FuelCounter _fuelCounterCreated;
     private InvisibleWall _invisibleWall;
     private InvisibleWall _invisibleLeftWallCreated;
     private InvisibleWall _invisibleRightWallCreated;
@@ -42,16 +44,26 @@ public class EntryPoint : MonoBehaviour
         _shopFuelItem = Resources.Load<ShopFuelItem>("ItemFuel");
         _moneyCounter = Resources.Load<MoneyCounter>("MoneyCounter");
         _invisibleWall = Resources.Load<InvisibleWall>("InvisibleWall");
+        _fuelCounter = Resources.Load<FuelCounter>("FuelCounter");
         CreateMoneyCounter();
+        CreateFuelCounter();
         CreateRocket();
         CreateUI();
         _input.OnPlay += CreateSpawners;
         _input.OnPlay += DisableShop;
         _input.OnPlay += FuelBarCreated;
         _input.OnPlay += CreateInvisibleWall;
+        _input.OnPlay += DisableFuel;
     }
 
     private void CreateUI()
+    {
+       CreateFailWindow();
+       CreateShopFuelItem();
+       CreateSpeedFuelItem();
+    }
+
+    private void CreateFailWindow()
     {
         _failWindowCreated = Instantiate(_failWindow, 
             _failWindow.GetComponent<RectTransform>().localPosition, 
@@ -59,7 +71,10 @@ public class EntryPoint : MonoBehaviour
             _canvas.transform);
         _failWindowCreated.GetComponent<RectTransform>().localPosition = Vector3.zero;
         _failWindowCreated.Setup(_rocketCreated);
+    }
 
+    private void CreateSpeedFuelItem()
+    {
         _shopSpeedItemCreated = Instantiate(_shopSpeedItem, 
             _shopSpeedItem.GetComponent<RectTransform>().localPosition, 
             Quaternion.identity, 
@@ -68,7 +83,10 @@ public class EntryPoint : MonoBehaviour
         _shopSpeedItemCreated.GetComponent<ShopSpeedItemViewer>().Setup(_rocketCreated);
         _shopSpeedItemCreated.GetComponent<RectTransform>().localPosition = 
             _shopSpeedItem.GetComponent<RectTransform>().localPosition;
-        
+    }
+
+    private void CreateShopFuelItem()
+    {
         _shopFuelItemCreated = Instantiate(_shopFuelItem, 
             _shopFuelItem.GetComponent<RectTransform>().localPosition, 
             Quaternion.identity, 
@@ -77,6 +95,16 @@ public class EntryPoint : MonoBehaviour
         _shopFuelItemCreated.GetComponent<ShopFuelItemViewer>().Setup(_rocketCreated);
         _shopFuelItemCreated.GetComponent<RectTransform>().localPosition = 
             _shopFuelItem.GetComponent<RectTransform>().localPosition;
+    }
+
+    private void CreateFuelCounter()
+    {
+        _fuelCounterCreated = Instantiate(_fuelCounter,
+            _fuelCounter.GetComponent<RectTransform>().localPosition, 
+            Quaternion.identity, 
+            _canvas.transform);
+        _fuelCounterCreated.GetComponent<RectTransform>().localPosition = 
+            _fuelCounter.GetComponent<RectTransform>().localPosition;
     }
 
     private void CreateMoneyCounter()
@@ -89,22 +117,6 @@ public class EntryPoint : MonoBehaviour
             _moneyCounter.GetComponent<RectTransform>().localPosition;
     }
 
-    private IEnumerator CreateWallTick()
-    {
-        while (true)
-        {
-            _invisibleLeftWallCreated = Instantiate(_invisibleWall,
-                new Vector3(-40, _rocketCreated.transform.position.y, _rocketCreated.transform.position.z), 
-                Quaternion.identity, 
-                _canvas.transform);
-            _invisibleRightWallCreated = Instantiate(_invisibleWall,
-                new Vector3(70, _rocketCreated.transform.position.y, _rocketCreated.transform.position.z), 
-                Quaternion.identity, 
-                _canvas.transform);
-            yield return new WaitForSeconds(1);
-        }
-    }
-
     private void CreateInvisibleWall()
     {
         _createWallTick = StartCoroutine(CreateWallTick());
@@ -113,7 +125,7 @@ public class EntryPoint : MonoBehaviour
     private void CreateRocket()
     {
         _rocketCreated = Instantiate(_rocket, _rocketStartPoint.position, Quaternion.identity);
-        _rocketCreated.Setup(_input, _moneyCounterCreated);
+        _rocketCreated.Setup(_input, _moneyCounterCreated, _fuelCounterCreated);
     }
 
     private void CreateSpawners()
@@ -142,5 +154,26 @@ public class EntryPoint : MonoBehaviour
     {
         _shopSpeedItemCreated.gameObject.SetActive(false);
         _shopFuelItemCreated.gameObject.SetActive(false);
+    }
+
+    private void DisableFuel()
+    {
+        _fuelCounterCreated.gameObject.SetActive(false);
+    }
+    
+    private IEnumerator CreateWallTick()
+    {
+        while (true)
+        {
+            _invisibleLeftWallCreated = Instantiate(_invisibleWall,
+                new Vector3(-40, _rocketCreated.transform.position.y, _rocketCreated.transform.position.z), 
+                Quaternion.identity, 
+                _canvas.transform);
+            _invisibleRightWallCreated = Instantiate(_invisibleWall,
+                new Vector3(70, _rocketCreated.transform.position.y, _rocketCreated.transform.position.z), 
+                Quaternion.identity, 
+                _canvas.transform);
+            yield return new WaitForSeconds(1);
+        }
     }
 }

@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/FuelCounter.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/IInput.cs" />
@@ -34,15 +37,17 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fuel/Fuel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/EntryPoint.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fuel/FuelBar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/Rocket.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/InvisibleWall.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/Ground.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Fuel/ShopFuelItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Fuel/ShopFuelItemViewer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Speed/ShopSpeedItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Speed/ShopSpeedItemViewer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/FuelBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/FuelCounter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/EntryPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enviroment/Rocket.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2dEimv6QBQ1gjJRFkq4hcu6Q7sT" />
@@ -76,6 +81,8 @@
       <workItem from="1709669815641" duration="7915000" />
       <workItem from="1709678593274" duration="56000" />
       <workItem from="1709717614556" duration="2284000" />
+      <workItem from="1709725349451" duration="938000" />
+      <workItem from="1709727303964" duration="448000" />
     </task>
     <servers />
   </component>
