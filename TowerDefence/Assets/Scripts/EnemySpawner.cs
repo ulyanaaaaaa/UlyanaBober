@@ -1,18 +1,30 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(EnemyFabrica))]
 public class EnemySpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float _delay;
+    private Coroutine _spawnTick;
+    private EnemyFabrica _enemyFabrica;
+
+    private void Awake()
     {
-        
+        _enemyFabrica = GetComponent<EnemyFabrica>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        _spawnTick = StartCoroutine(SpawnTick());
+    }
+
+    private IEnumerator SpawnTick()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(_delay);
+            Vector3 position = new Vector3(16f, 0.6f, Random.Range(-20, -5));
+            _enemyFabrica.CreateEnemy(position);
+        }
     }
 }

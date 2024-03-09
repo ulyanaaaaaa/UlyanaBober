@@ -1,18 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyFabrica : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Enemy CreateEnemy(Vector3 position)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Enemy enemy = Resources.Load<Enemy>("Enemy");
+        return Instantiate(enemy, position, Quaternion.identity);
     }
 }

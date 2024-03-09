@@ -6,14 +6,20 @@
     <e p="D:\UlyanaBober\TowerDefence" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Materials" t="Include" />
+        <e p="Resources" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Ball.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
+          <e p="EnemyBall.cs" t="Include" />
           <e p="EnemyFabrica.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
           <e p="MainTower.cs" t="Include" />
           <e p="Point.cs" t="Include" />
+          <e p="SmallTower.cs" t="Include" />
           <e p="Tower.cs" t="Include" />
+          <e p="TowerBall.cs" t="Include" />
           <e p="Wallet.cs" t="Include" />
         </e>
       </e>

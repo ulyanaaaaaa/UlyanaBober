@@ -1,9 +1,11 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Wallet))]
 public class MainTower : Tower
 {
-    protected override void Shoot()
-    {
-        
-    }
+   private void Awake()
+   {
+      _wallet = GetComponent<Wallet>();
+   }
 }

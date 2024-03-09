@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Point : MonoBehaviour
 {
+    [SerializeField] private Wallet _wallet;
     
     private void Update()
     {
@@ -11,14 +12,18 @@ public class Point : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                OnClick();
+                if (hit.collider.gameObject == gameObject)
+                {
+                    OnClick();
+                    Destroy(gameObject);
+                }
             }
         }
     }
     
     private void OnClick()
     {
-        Tower tower = Resources.Load<Tower>("Tower");
-        Instantiate(tower, transform.position, Quaternion.identity);
+        SmallTower tower = Resources.Load<SmallTower>("Tower");
+        Instantiate(tower, transform.position, Quaternion.identity).Setup(_wallet);
     }
 }
