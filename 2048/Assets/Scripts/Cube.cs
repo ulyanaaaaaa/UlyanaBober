@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -11,7 +12,19 @@ public class Cube : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     
     public void OnPointerDown(PointerEventData pointerEventData)
     {
-        
+        MoveObjectWithMouse();
+    }
+    
+    public void MoveObjectWithMouse()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            Vector3 targetPoint = hit.point;
+            transform.position = Vector3.Lerp(transform.position, targetPoint, Time.deltaTime * 10f);
+        }
     }
 
     public void OnPointerUp(PointerEventData pointerEventData)
