@@ -9,42 +9,52 @@ public class Cube : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     [SerializeField] private float _speed;
     private Rigidbody _rigidbody;
     private CubeFabrica _cubeFabrica;
+    private bool _isMouseDown;
+
+    public Cube Setup(CubeFabrica cubeFabrica)
+    {
+        _cubeFabrica = cubeFabrica;
+        return this;
+    }
+
+    private void Awake()
+    {
+        _rigidbody = GetComponent<Rigidbody>();
+    }
     
     public void OnPointerDown(PointerEventData pointerEventData)
     {
-        MoveObjectWithMouse();
-    }
-    
-    public void MoveObjectWithMouse()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit))
-        {
-            Vector3 targetPoint = hit.point;
-            transform.position = Vector3.Lerp(transform.position, targetPoint, Time.deltaTime * 10f);
-        }
+        _isMouseDown = true;
     }
 
     public void OnPointerUp(PointerEventData pointerEventData)
     {
+        _isMouseDown = false;
         Shoot();
     }
     
+    private void Update()
+    {
+        if (_isMouseDown)
+        {
+            Vector3 mousePosition = Input.mousePosition;
+            mousePosition.z = 10;
+            Vector3 position = Camera.main.ScreenToWorldPoint(mousePosition);
+            transform.position = position;
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.TryGetComponent(out Cube cube))
         {
             if (_count == cube._count)
             {
-                Cube newCube = Resources.Load<Cube>((_count * 2).ToString());
-                
-                Instantiate(newCube, transform.position, Quaternion.identity).
-                    SetCount(_count * 2);
-                
                 Destroy(cube);
                 Destroy(gameObject);
+                Cube newCube = Resources.Load<Cube>((_count * _count).ToString());
+                Instantiate(newCube, transform.position, Quaternion.identity).
+                    SetCount(_count * 2);
             }
         }
     }

@@ -13,16 +13,16 @@ public class CubeFabrica : MonoBehaviour
 
     private void Start()
     {
-        
         CreateRandomCube();
     }
+    
     public void CreateRandomCube()
     {
         int random = Random.Range(0, 100);
         
         if (random > 50)
-            _cubeSpawner.CreateRedCube(_spawnPosition.position);
+            _cubeSpawner.CreateRedCube(_spawnPosition.position).Setup(this);
         else
-            _cubeSpawner.CreateYellowCube(_spawnPosition.position);
+            _cubeSpawner.CreateYellowCube(_spawnPosition.position).Setup(this);
     }
 }
