@@ -8,10 +8,6 @@ public class GameInstaller : MonoInstaller
     [SerializeField] private FailTrigger _failTrigger;
     public override void InstallBindings()
     {
-        Container.Bind<LevelStateMachine>()
-            .FromInstance(_levelStateMachine)
-            .AsSingle();
-        
         Container.Bind<IInput>()
             .To<KeyboardInput>()
             .AsSingle();
@@ -20,12 +16,20 @@ public class GameInstaller : MonoInstaller
             .FromComponentInNewPrefabResource(AssetsPath.ServicesPath.PauseService)
             .AsSingle();
         
-        Container.Bind<FinishTrigger>()
-            .FromInstance(_finishTrigger)
+        Container.Bind<SaveService>()
+            .FromComponentInNewPrefabResource(AssetsPath.ServicesPath.SaveService)
             .AsSingle();
         
         Container.Bind<FailTrigger>()
             .FromInstance(_failTrigger)
+            .AsSingle();
+        
+        Container.Bind<FinishTrigger>()
+            .FromInstance(_finishTrigger)
+            .AsSingle();
+        
+        Container.Bind<LevelStateMachine>()
+            .FromInstance(_levelStateMachine)
             .AsSingle();
     }
 }

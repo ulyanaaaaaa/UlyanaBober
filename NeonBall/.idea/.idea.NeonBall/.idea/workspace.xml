@@ -8,10 +8,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Level/Rules/LevelProgress.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Menu/LevelCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Level/UI/FailPanelUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Core/Services/PauseService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Level/Rules/FailTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Core/Level/LevelData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Menu/LevelsLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Level/UI/FadePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Core/Bootstrap/SceneTransactionInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Core/Bootstrap/IInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sources/Scripts/Core/Services/SceneService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -29,18 +36,29 @@
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Bootstrap/IInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Servises/PauseServise.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Servises/IPause.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Assets/AssetsPath.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Mechanics/PlayerTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Level/FinishTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Level/LevelStateMachine.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/UI/WinPanelUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/UI/FinishPanelUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/Rules/FailTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Bootstrap/GameInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/LevelStateMachine.cs" />
-      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/UI/FailPanelUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Services/PauseService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/Star/Star.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Services/SceneServices.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Bootstrap/SceneTransactionInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/UI/FadePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Services/SceneService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Bootstrap/GameInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Services/SaveService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/UI/FailPanelUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/UI/FinishPanelUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Level/LevelData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Level/Rules/LevelProgress.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Menu/LevelCeil.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Menu/LevelCell.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Core/Assets/AssetsPath.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sources/Scripts/Menu/LevelsLoader.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2eVXS7xNwCSUuXNjORIwtaPE6Fm" />
@@ -73,6 +91,12 @@
       <workItem from="1712055261059" duration="6170000" />
       <workItem from="1712081304219" duration="5855000" />
       <workItem from="1712137336056" duration="3136000" />
+      <workItem from="1712161414036" duration="593000" />
+      <workItem from="1712428777690" duration="4716000" />
+      <workItem from="1712441491210" duration="276000" />
+      <workItem from="1712514605671" duration="8678000" />
+      <workItem from="1712536226474" duration="1047000" />
+      <workItem from="1712584360646" duration="5656000" />
     </task>
     <servers />
   </component>
